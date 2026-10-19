@@ -1,6 +1,7 @@
 {
     "pack": {
-        "pack_format": 97,
-        "description": "\u00a7dDreamers\u00a76 Resourcepack"
+        "description": "\u00a7dDreamers\u00a76 Resourcepack",
+        "min_format": [97, 1],
+        "max_format": 97
     }
 }
