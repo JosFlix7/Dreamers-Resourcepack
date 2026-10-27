@@ -1,0 +1,25 @@
+{
+    "format_version": "1.14.0",
+    "sound_definitions": {
+        "terranova.death": {
+            "category": "ambient",
+            "sounds": [
+                {
+                    "name": "sounds/terranova_death",
+                    "stream": true,
+                    "volume": 1.0
+                }
+            ]
+        },
+        "terranova.totem": {
+            "category": "player",
+            "sounds": [
+                {
+                    "name": "sounds/terranova_totem",
+                    "stream": true,
+                    "volume": 1.0
+                }
+            ]
+        }
+    }
+}

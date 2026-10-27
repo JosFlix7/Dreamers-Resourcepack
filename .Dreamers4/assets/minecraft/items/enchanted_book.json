@@ -1,68 +1,68 @@
 {
-    "model": {
-      "type": "minecraft:condition",
-      "property": "minecraft:component",
-      "predicate": "minecraft:stored_enchantments",
-      "value": [
-        {
-          "enchantments": "minecraft:wind_burst",
-          "levels": {
-            "min": 1,
-            "max": 3
-          }
-        }
-      ],
-      "on_true": {
-        "type": "minecraft:model",
-        "model": "carl:item/wind_burst"
-      },
-      "on_false": {
-        "type": "minecraft:condition",
-        "property": "minecraft:component",
-        "predicate": "minecraft:stored_enchantments",
-        "value": [
-          {
-            "enchantments": "minecraft:vanishing_curse",
-            "levels": 1
-          }
-        ],
-        "on_true": {
-          "type": "minecraft:model",
-          "model": "carl:item/vanishing_curse"
-        },
-        "on_false": {
-          "type": "minecraft:condition",
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:display_context",
+    "cases": [
+      {
+        "when": "gui",
+        "model": {
+          "type": "minecraft:select",
           "property": "minecraft:component",
-          "predicate": "minecraft:stored_enchantments",
-          "value": [
+          "component": "minecraft:stored_enchantments",
+          "cases": [
             {
-              "enchantments": "minecraft:breach",
-              "levels": {
-                "min": 1,
-                "max": 4
+              "model": {
+                "type": "minecraft:model",
+                "model": "tooltrims:item/creative_menu_linear_template"
+              },
+              "when": {
+                "tooltrims:_a_linear_template": 1
+              }
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "tooltrims:item/creative_menu_tracks_template"
+              },
+              "when": {
+                "tooltrims:_b_tracks_template": 1
+              }
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "tooltrims:item/creative_menu_charge_template"
+              },
+              "when": {
+                "tooltrims:_c_charge_template": 1
+              }
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "tooltrims:item/creative_menu_frost_template"
+              },
+              "when": {
+                "tooltrims:_d_frost_template": 1
               }
             }
           ],
-          "on_true": {
-            "type": "minecraft:model",
-            "model": "carl:item/breach"
-          },
-          "on_false": {
+          "fallback": {
             "type": "minecraft:condition",
             "property": "minecraft:component",
             "predicate": "minecraft:stored_enchantments",
             "value": [
               {
-                "enchantments": "minecraft:density",
+                "enchantments": "minecraft:wind_burst",
                 "levels": {
                   "min": 1,
-                  "max": 5
+                  "max": 3
                 }
               }
             ],
             "on_true": {
               "type": "minecraft:model",
-              "model": "carl:item/density"
+              "model": "carl:item/wind_burst"
             },
             "on_false": {
               "type": "minecraft:condition",
@@ -70,16 +70,13 @@
               "predicate": "minecraft:stored_enchantments",
               "value": [
                 {
-                  "enchantments": "minecraft:fortune",
-                  "levels": {
-                    "min": 1,
-                    "max": 3
-                  }
+                  "enchantments": "minecraft:vanishing_curse",
+                  "levels": 1
                 }
               ],
               "on_true": {
                 "type": "minecraft:model",
-                "model": "carl:item/fortune"
+                "model": "carl:item/vanishing_curse"
               },
               "on_false": {
                 "type": "minecraft:condition",
@@ -87,13 +84,16 @@
                 "predicate": "minecraft:stored_enchantments",
                 "value": [
                   {
-                    "enchantments": "minecraft:silk_touch",
-                    "levels": 1
+                    "enchantments": "minecraft:breach",
+                    "levels": {
+                      "min": 1,
+                      "max": 4
+                    }
                   }
                 ],
                 "on_true": {
                   "type": "minecraft:model",
-                  "model": "carl:item/silk_touch"
+                  "model": "carl:item/breach"
                 },
                 "on_false": {
                   "type": "minecraft:condition",
@@ -101,7 +101,7 @@
                   "predicate": "minecraft:stored_enchantments",
                   "value": [
                     {
-                      "enchantments": "minecraft:efficiency",
+                      "enchantments": "minecraft:density",
                       "levels": {
                         "min": 1,
                         "max": 5
@@ -110,7 +110,7 @@
                   ],
                   "on_true": {
                     "type": "minecraft:model",
-                    "model": "carl:item/efficiency"
+                    "model": "carl:item/density"
                   },
                   "on_false": {
                     "type": "minecraft:condition",
@@ -118,13 +118,16 @@
                     "predicate": "minecraft:stored_enchantments",
                     "value": [
                       {
-                        "enchantments": "minecraft:infinity",
-                        "levels": 1
+                        "enchantments": "minecraft:fortune",
+                        "levels": {
+                          "min": 1,
+                          "max": 3
+                        }
                       }
                     ],
                     "on_true": {
                       "type": "minecraft:model",
-                      "model": "carl:item/infinity"
+                      "model": "carl:item/fortune"
                     },
                     "on_false": {
                       "type": "minecraft:condition",
@@ -132,16 +135,13 @@
                       "predicate": "minecraft:stored_enchantments",
                       "value": [
                         {
-                          "enchantments": "minecraft:smite",
-                          "levels": {
-                            "min": 1,
-                            "max": 5
-                          }
+                          "enchantments": "minecraft:silk_touch",
+                          "levels": 1
                         }
                       ],
                       "on_true": {
                         "type": "minecraft:model",
-                        "model": "carl:item/smite"
+                        "model": "carl:item/silk_touch"
                       },
                       "on_false": {
                         "type": "minecraft:condition",
@@ -149,16 +149,16 @@
                         "predicate": "minecraft:stored_enchantments",
                         "value": [
                           {
-                            "enchantments": "minecraft:fire_aspect",
+                            "enchantments": "minecraft:efficiency",
                             "levels": {
                               "min": 1,
-                              "max": 2
+                              "max": 5
                             }
                           }
                         ],
                         "on_true": {
                           "type": "minecraft:model",
-                          "model": "carl:item/fire_aspect"
+                          "model": "carl:item/efficiency"
                         },
                         "on_false": {
                           "type": "minecraft:condition",
@@ -166,13 +166,13 @@
                           "predicate": "minecraft:stored_enchantments",
                           "value": [
                             {
-                              "enchantments": "minecraft:aqua_affinity",
+                              "enchantments": "minecraft:infinity",
                               "levels": 1
                             }
                           ],
                           "on_true": {
                             "type": "minecraft:model",
-                            "model": "carl:item/aqua_affinity"
+                            "model": "carl:item/infinity"
                           },
                           "on_false": {
                             "type": "minecraft:condition",
@@ -180,16 +180,16 @@
                             "predicate": "minecraft:stored_enchantments",
                             "value": [
                               {
-                                "enchantments": "minecraft:lunge",
+                                "enchantments": "minecraft:smite",
                                 "levels": {
                                   "min": 1,
-                                  "max": 3
+                                  "max": 5
                                 }
                               }
                             ],
                             "on_true": {
                               "type": "minecraft:model",
-                              "model": "carl:item/lunge"
+                              "model": "carl:item/smite"
                             },
                             "on_false": {
                               "type": "minecraft:condition",
@@ -197,16 +197,16 @@
                               "predicate": "minecraft:stored_enchantments",
                               "value": [
                                 {
-                                  "enchantments": "minecraft:sharpness",
+                                  "enchantments": "minecraft:fire_aspect",
                                   "levels": {
                                     "min": 1,
-                                    "max": 5
+                                    "max": 2
                                   }
                                 }
                               ],
                               "on_true": {
                                 "type": "minecraft:model",
-                                "model": "carl:item/sharpness"
+                                "model": "carl:item/fire_aspect"
                               },
                               "on_false": {
                                 "type": "minecraft:condition",
@@ -214,16 +214,13 @@
                                 "predicate": "minecraft:stored_enchantments",
                                 "value": [
                                   {
-                                    "enchantments": "minecraft:knockback",
-                                    "levels": {
-                                      "min": 1,
-                                      "max": 2
-                                    }
+                                    "enchantments": "minecraft:aqua_affinity",
+                                    "levels": 1
                                   }
                                 ],
                                 "on_true": {
                                   "type": "minecraft:model",
-                                  "model": "carl:item/knockback"
+                                  "model": "carl:item/aqua_affinity"
                                 },
                                 "on_false": {
                                   "type": "minecraft:condition",
@@ -231,13 +228,16 @@
                                   "predicate": "minecraft:stored_enchantments",
                                   "value": [
                                     {
-                                      "enchantments": "minecraft:channeling",
-                                      "levels": 1
+                                      "enchantments": "minecraft:lunge",
+                                      "levels": {
+                                        "min": 1,
+                                        "max": 3
+                                      }
                                     }
                                   ],
                                   "on_true": {
                                     "type": "minecraft:model",
-                                    "model": "carl:item/channeling"
+                                    "model": "carl:item/lunge"
                                   },
                                   "on_false": {
                                     "type": "minecraft:condition",
@@ -245,13 +245,16 @@
                                     "predicate": "minecraft:stored_enchantments",
                                     "value": [
                                       {
-                                        "enchantments": "minecraft:flame",
-                                        "levels": 1
+                                        "enchantments": "minecraft:sharpness",
+                                        "levels": {
+                                          "min": 1,
+                                          "max": 5
+                                        }
                                       }
                                     ],
                                     "on_true": {
                                       "type": "minecraft:model",
-                                      "model": "carl:item/flame"
+                                      "model": "carl:item/sharpness"
                                     },
                                     "on_false": {
                                       "type": "minecraft:condition",
@@ -259,7 +262,7 @@
                                       "predicate": "minecraft:stored_enchantments",
                                       "value": [
                                         {
-                                          "enchantments": "minecraft:punch",
+                                          "enchantments": "minecraft:knockback",
                                           "levels": {
                                             "min": 1,
                                             "max": 2
@@ -268,7 +271,7 @@
                                       ],
                                       "on_true": {
                                         "type": "minecraft:model",
-                                        "model": "carl:item/punch"
+                                        "model": "carl:item/knockback"
                                       },
                                       "on_false": {
                                         "type": "minecraft:condition",
@@ -276,16 +279,13 @@
                                         "predicate": "minecraft:stored_enchantments",
                                         "value": [
                                           {
-                                            "enchantments": "minecraft:power",
-                                            "levels": {
-                                              "min": 1,
-                                              "max": 5
-                                            }
+                                            "enchantments": "minecraft:channeling",
+                                            "levels": 1
                                           }
                                         ],
                                         "on_true": {
                                           "type": "minecraft:model",
-                                          "model": "carl:item/power"
+                                          "model": "carl:item/channeling"
                                         },
                                         "on_false": {
                                           "type": "minecraft:condition",
@@ -293,16 +293,13 @@
                                           "predicate": "minecraft:stored_enchantments",
                                           "value": [
                                             {
-                                              "enchantments": "minecraft:riptide",
-                                              "levels": {
-                                                "min": 1,
-                                                "max": 3
-                                              }
+                                              "enchantments": "minecraft:flame",
+                                              "levels": 1
                                             }
                                           ],
                                           "on_true": {
                                             "type": "minecraft:model",
-                                            "model": "carl:item/riptide"
+                                            "model": "carl:item/flame"
                                           },
                                           "on_false": {
                                             "type": "minecraft:condition",
@@ -310,16 +307,16 @@
                                             "predicate": "minecraft:stored_enchantments",
                                             "value": [
                                               {
-                                                "enchantments": "minecraft:loyalty",
+                                                "enchantments": "minecraft:punch",
                                                 "levels": {
                                                   "min": 1,
-                                                  "max": 3
+                                                  "max": 2
                                                 }
                                               }
                                             ],
                                             "on_true": {
                                               "type": "minecraft:model",
-                                              "model": "carl:item/loyalty"
+                                              "model": "carl:item/punch"
                                             },
                                             "on_false": {
                                               "type": "minecraft:condition",
@@ -327,7 +324,7 @@
                                               "predicate": "minecraft:stored_enchantments",
                                               "value": [
                                                 {
-                                                  "enchantments": "minecraft:impaling",
+                                                  "enchantments": "minecraft:power",
                                                   "levels": {
                                                     "min": 1,
                                                     "max": 5
@@ -336,7 +333,7 @@
                                               ],
                                               "on_true": {
                                                 "type": "minecraft:model",
-                                                "model": "carl:item/impaling"
+                                                "model": "carl:item/power"
                                               },
                                               "on_false": {
                                                 "type": "minecraft:condition",
@@ -344,7 +341,7 @@
                                                 "predicate": "minecraft:stored_enchantments",
                                                 "value": [
                                                   {
-                                                    "enchantments": "minecraft:looting",
+                                                    "enchantments": "minecraft:riptide",
                                                     "levels": {
                                                       "min": 1,
                                                       "max": 3
@@ -353,7 +350,7 @@
                                                 ],
                                                 "on_true": {
                                                   "type": "minecraft:model",
-                                                  "model": "carl:item/looting"
+                                                  "model": "carl:item/riptide"
                                                 },
                                                 "on_false": {
                                                   "type": "minecraft:condition",
@@ -361,7 +358,7 @@
                                                   "predicate": "minecraft:stored_enchantments",
                                                   "value": [
                                                     {
-                                                      "enchantments": "minecraft:sweeping_edge",
+                                                      "enchantments": "minecraft:loyalty",
                                                       "levels": {
                                                         "min": 1,
                                                         "max": 3
@@ -370,7 +367,7 @@
                                                   ],
                                                   "on_true": {
                                                     "type": "minecraft:model",
-                                                    "model": "carl:item/sweeping_edge"
+                                                    "model": "carl:item/loyalty"
                                                   },
                                                   "on_false": {
                                                     "type": "minecraft:condition",
@@ -378,13 +375,16 @@
                                                     "predicate": "minecraft:stored_enchantments",
                                                     "value": [
                                                       {
-                                                        "enchantments": "minecraft:binding_curse",
-                                                        "levels": 1
+                                                        "enchantments": "minecraft:impaling",
+                                                        "levels": {
+                                                          "min": 1,
+                                                          "max": 5
+                                                        }
                                                       }
                                                     ],
                                                     "on_true": {
                                                       "type": "minecraft:model",
-                                                      "model": "carl:item/binding_curse"
+                                                      "model": "carl:item/impaling"
                                                     },
                                                     "on_false": {
                                                       "type": "minecraft:condition",
@@ -392,7 +392,7 @@
                                                       "predicate": "minecraft:stored_enchantments",
                                                       "value": [
                                                         {
-                                                          "enchantments": "minecraft:respiration",
+                                                          "enchantments": "minecraft:looting",
                                                           "levels": {
                                                             "min": 1,
                                                             "max": 3
@@ -401,7 +401,7 @@
                                                       ],
                                                       "on_true": {
                                                         "type": "minecraft:model",
-                                                        "model": "carl:item/respiration"
+                                                        "model": "carl:item/looting"
                                                       },
                                                       "on_false": {
                                                         "type": "minecraft:condition",
@@ -409,13 +409,16 @@
                                                         "predicate": "minecraft:stored_enchantments",
                                                         "value": [
                                                           {
-                                                            "enchantments": "minecraft:mending",
-                                                            "levels": 1
+                                                            "enchantments": "minecraft:sweeping_edge",
+                                                            "levels": {
+                                                              "min": 1,
+                                                              "max": 3
+                                                            }
                                                           }
                                                         ],
                                                         "on_true": {
                                                           "type": "minecraft:model",
-                                                          "model": "carl:item/mending"
+                                                          "model": "carl:item/sweeping_edge"
                                                         },
                                                         "on_false": {
                                                           "type": "minecraft:condition",
@@ -423,16 +426,13 @@
                                                           "predicate": "minecraft:stored_enchantments",
                                                           "value": [
                                                             {
-                                                              "enchantments": "minecraft:frost_walker",
-                                                              "levels": {
-                                                                "min": 1,
-                                                                "max": 2
-                                                              }
+                                                              "enchantments": "minecraft:binding_curse",
+                                                              "levels": 1
                                                             }
                                                           ],
                                                           "on_true": {
                                                             "type": "minecraft:model",
-                                                            "model": "carl:item/frost_walker"
+                                                            "model": "carl:item/binding_curse"
                                                           },
                                                           "on_false": {
                                                             "type": "minecraft:condition",
@@ -440,7 +440,7 @@
                                                             "predicate": "minecraft:stored_enchantments",
                                                             "value": [
                                                               {
-                                                                "enchantments": "minecraft:depth_strider",
+                                                                "enchantments": "minecraft:respiration",
                                                                 "levels": {
                                                                   "min": 1,
                                                                   "max": 3
@@ -449,7 +449,7 @@
                                                             ],
                                                             "on_true": {
                                                               "type": "minecraft:model",
-                                                              "model": "carl:item/depth_strider"
+                                                              "model": "carl:item/respiration"
                                                             },
                                                             "on_false": {
                                                               "type": "minecraft:condition",
@@ -457,16 +457,13 @@
                                                               "predicate": "minecraft:stored_enchantments",
                                                               "value": [
                                                                 {
-                                                                  "enchantments": "minecraft:thorns",
-                                                                  "levels": {
-                                                                    "min": 1,
-                                                                    "max": 3
-                                                                  }
+                                                                  "enchantments": "minecraft:mending",
+                                                                  "levels": 1
                                                                 }
                                                               ],
                                                               "on_true": {
                                                                 "type": "minecraft:model",
-                                                                "model": "carl:item/thorns"
+                                                                "model": "carl:item/mending"
                                                               },
                                                               "on_false": {
                                                                 "type": "minecraft:condition",
@@ -474,16 +471,16 @@
                                                                 "predicate": "minecraft:stored_enchantments",
                                                                 "value": [
                                                                   {
-                                                                    "enchantments": "minecraft:swift_sneak",
+                                                                    "enchantments": "minecraft:frost_walker",
                                                                     "levels": {
                                                                       "min": 1,
-                                                                      "max": 3
+                                                                      "max": 2
                                                                     }
                                                                   }
                                                                 ],
                                                                 "on_true": {
                                                                   "type": "minecraft:model",
-                                                                  "model": "carl:item/swift_sneak"
+                                                                  "model": "carl:item/frost_walker"
                                                                 },
                                                                 "on_false": {
                                                                   "type": "minecraft:condition",
@@ -491,16 +488,16 @@
                                                                   "predicate": "minecraft:stored_enchantments",
                                                                   "value": [
                                                                     {
-                                                                      "enchantments": "minecraft:fire_protection",
+                                                                      "enchantments": "minecraft:depth_strider",
                                                                       "levels": {
                                                                         "min": 1,
-                                                                        "max": 4
+                                                                        "max": 3
                                                                       }
                                                                     }
                                                                   ],
                                                                   "on_true": {
                                                                     "type": "minecraft:model",
-                                                                    "model": "carl:item/fire_protection"
+                                                                    "model": "carl:item/depth_strider"
                                                                   },
                                                                   "on_false": {
                                                                     "type": "minecraft:condition",
@@ -508,16 +505,16 @@
                                                                     "predicate": "minecraft:stored_enchantments",
                                                                     "value": [
                                                                       {
-                                                                        "enchantments": "minecraft:blast_protection",
+                                                                        "enchantments": "minecraft:thorns",
                                                                         "levels": {
                                                                           "min": 1,
-                                                                          "max": 4
+                                                                          "max": 3
                                                                         }
                                                                       }
                                                                     ],
                                                                     "on_true": {
                                                                       "type": "minecraft:model",
-                                                                      "model": "carl:item/blast_protection"
+                                                                      "model": "carl:item/thorns"
                                                                     },
                                                                     "on_false": {
                                                                       "type": "minecraft:condition",
@@ -525,7 +522,7 @@
                                                                       "predicate": "minecraft:stored_enchantments",
                                                                       "value": [
                                                                         {
-                                                                          "enchantments": "minecraft:soul_speed",
+                                                                          "enchantments": "minecraft:swift_sneak",
                                                                           "levels": {
                                                                             "min": 1,
                                                                             "max": 3
@@ -534,7 +531,7 @@
                                                                       ],
                                                                       "on_true": {
                                                                         "type": "minecraft:model",
-                                                                        "model": "carl:item/soul_speed"
+                                                                        "model": "carl:item/swift_sneak"
                                                                       },
                                                                       "on_false": {
                                                                         "type": "minecraft:condition",
@@ -542,7 +539,7 @@
                                                                         "predicate": "minecraft:stored_enchantments",
                                                                         "value": [
                                                                           {
-                                                                            "enchantments": "minecraft:feather_falling",
+                                                                            "enchantments": "minecraft:fire_protection",
                                                                             "levels": {
                                                                               "min": 1,
                                                                               "max": 4
@@ -551,7 +548,7 @@
                                                                         ],
                                                                         "on_true": {
                                                                           "type": "minecraft:model",
-                                                                          "model": "carl:item/feather_falling"
+                                                                          "model": "carl:item/fire_protection"
                                                                         },
                                                                         "on_false": {
                                                                           "type": "minecraft:condition",
@@ -559,7 +556,7 @@
                                                                           "predicate": "minecraft:stored_enchantments",
                                                                           "value": [
                                                                             {
-                                                                              "enchantments": "minecraft:projectile_protection",
+                                                                              "enchantments": "minecraft:blast_protection",
                                                                               "levels": {
                                                                                 "min": 1,
                                                                                 "max": 4
@@ -568,7 +565,7 @@
                                                                           ],
                                                                           "on_true": {
                                                                             "type": "minecraft:model",
-                                                                            "model": "carl:item/projectile_protection"
+                                                                            "model": "carl:item/blast_protection"
                                                                           },
                                                                           "on_false": {
                                                                             "type": "minecraft:condition",
@@ -576,16 +573,16 @@
                                                                             "predicate": "minecraft:stored_enchantments",
                                                                             "value": [
                                                                               {
-                                                                                "enchantments": "minecraft:protection",
+                                                                                "enchantments": "minecraft:soul_speed",
                                                                                 "levels": {
                                                                                   "min": 1,
-                                                                                  "max": 4
+                                                                                  "max": 3
                                                                                 }
                                                                               }
                                                                             ],
                                                                             "on_true": {
                                                                               "type": "minecraft:model",
-                                                                              "model": "carl:item/protection"
+                                                                              "model": "carl:item/soul_speed"
                                                                             },
                                                                             "on_false": {
                                                                               "type": "minecraft:condition",
@@ -593,16 +590,16 @@
                                                                               "predicate": "minecraft:stored_enchantments",
                                                                               "value": [
                                                                                 {
-                                                                                  "enchantments": "minecraft:bane_of_arthropods",
+                                                                                  "enchantments": "minecraft:feather_falling",
                                                                                   "levels": {
                                                                                     "min": 1,
-                                                                                    "max": 5
+                                                                                    "max": 4
                                                                                   }
                                                                                 }
                                                                               ],
                                                                               "on_true": {
                                                                                 "type": "minecraft:model",
-                                                                                "model": "carl:item/bane_of_arthropods"
+                                                                                "model": "carl:item/feather_falling"
                                                                               },
                                                                               "on_false": {
                                                                                 "type": "minecraft:condition",
@@ -610,13 +607,16 @@
                                                                                 "predicate": "minecraft:stored_enchantments",
                                                                                 "value": [
                                                                                   {
-                                                                                    "enchantments": "minecraft:multishot",
-                                                                                    "levels": 1
+                                                                                    "enchantments": "minecraft:projectile_protection",
+                                                                                    "levels": {
+                                                                                      "min": 1,
+                                                                                      "max": 4
+                                                                                    }
                                                                                   }
                                                                                 ],
                                                                                 "on_true": {
                                                                                   "type": "minecraft:model",
-                                                                                  "model": "carl:item/multishot"
+                                                                                  "model": "carl:item/projectile_protection"
                                                                                 },
                                                                                 "on_false": {
                                                                                   "type": "minecraft:condition",
@@ -624,7 +624,7 @@
                                                                                   "predicate": "minecraft:stored_enchantments",
                                                                                   "value": [
                                                                                     {
-                                                                                      "enchantments": "minecraft:piercing",
+                                                                                      "enchantments": "minecraft:protection",
                                                                                       "levels": {
                                                                                         "min": 1,
                                                                                         "max": 4
@@ -633,7 +633,7 @@
                                                                                   ],
                                                                                   "on_true": {
                                                                                     "type": "minecraft:model",
-                                                                                    "model": "carl:item/piercing"
+                                                                                    "model": "carl:item/protection"
                                                                                   },
                                                                                   "on_false": {
                                                                                     "type": "minecraft:condition",
@@ -641,16 +641,16 @@
                                                                                     "predicate": "minecraft:stored_enchantments",
                                                                                     "value": [
                                                                                       {
-                                                                                        "enchantments": "minecraft:quick_charge",
+                                                                                        "enchantments": "minecraft:bane_of_arthropods",
                                                                                         "levels": {
                                                                                           "min": 1,
-                                                                                          "max": 3
+                                                                                          "max": 5
                                                                                         }
                                                                                       }
                                                                                     ],
                                                                                     "on_true": {
                                                                                       "type": "minecraft:model",
-                                                                                      "model": "carl:item/quick_charge"
+                                                                                      "model": "carl:item/bane_of_arthropods"
                                                                                     },
                                                                                     "on_false": {
                                                                                       "type": "minecraft:condition",
@@ -658,16 +658,13 @@
                                                                                       "predicate": "minecraft:stored_enchantments",
                                                                                       "value": [
                                                                                         {
-                                                                                          "enchantments": "minecraft:lure",
-                                                                                          "levels": {
-                                                                                            "min": 1,
-                                                                                            "max": 3
-                                                                                          }
+                                                                                          "enchantments": "minecraft:multishot",
+                                                                                          "levels": 1
                                                                                         }
                                                                                       ],
                                                                                       "on_true": {
                                                                                         "type": "minecraft:model",
-                                                                                        "model": "carl:item/lure"
+                                                                                        "model": "carl:item/multishot"
                                                                                       },
                                                                                       "on_false": {
                                                                                         "type": "minecraft:condition",
@@ -675,16 +672,16 @@
                                                                                         "predicate": "minecraft:stored_enchantments",
                                                                                         "value": [
                                                                                           {
-                                                                                            "enchantments": "minecraft:luck_of_the_sea",
+                                                                                            "enchantments": "minecraft:piercing",
                                                                                             "levels": {
                                                                                               "min": 1,
-                                                                                              "max": 3
+                                                                                              "max": 4
                                                                                             }
                                                                                           }
                                                                                         ],
                                                                                         "on_true": {
                                                                                           "type": "minecraft:model",
-                                                                                          "model": "carl:item/luck_of_the_sea"
+                                                                                          "model": "carl:item/piercing"
                                                                                         },
                                                                                         "on_false": {
                                                                                           "type": "minecraft:condition",
@@ -692,7 +689,7 @@
                                                                                           "predicate": "minecraft:stored_enchantments",
                                                                                           "value": [
                                                                                             {
-                                                                                              "enchantments": "minecraft:unbreaking",
+                                                                                              "enchantments": "minecraft:quick_charge",
                                                                                               "levels": {
                                                                                                 "min": 1,
                                                                                                 "max": 3
@@ -701,11 +698,859 @@
                                                                                           ],
                                                                                           "on_true": {
                                                                                             "type": "minecraft:model",
-                                                                                            "model": "carl:item/unbreaking"
+                                                                                            "model": "carl:item/quick_charge"
                                                                                           },
                                                                                           "on_false": {
+                                                                                            "type": "minecraft:condition",
+                                                                                            "property": "minecraft:component",
+                                                                                            "predicate": "minecraft:stored_enchantments",
+                                                                                            "value": [
+                                                                                              {
+                                                                                                "enchantments": "minecraft:lure",
+                                                                                                "levels": {
+                                                                                                  "min": 1,
+                                                                                                  "max": 3
+                                                                                                }
+                                                                                              }
+                                                                                            ],
+                                                                                            "on_true": {
+                                                                                              "type": "minecraft:model",
+                                                                                              "model": "carl:item/lure"
+                                                                                            },
+                                                                                            "on_false": {
+                                                                                              "type": "minecraft:condition",
+                                                                                              "property": "minecraft:component",
+                                                                                              "predicate": "minecraft:stored_enchantments",
+                                                                                              "value": [
+                                                                                                {
+                                                                                                  "enchantments": "minecraft:luck_of_the_sea",
+                                                                                                  "levels": {
+                                                                                                    "min": 1,
+                                                                                                    "max": 3
+                                                                                                  }
+                                                                                                }
+                                                                                              ],
+                                                                                              "on_true": {
+                                                                                                "type": "minecraft:model",
+                                                                                                "model": "carl:item/luck_of_the_sea"
+                                                                                              },
+                                                                                              "on_false": {
+                                                                                                "type": "minecraft:condition",
+                                                                                                "property": "minecraft:component",
+                                                                                                "predicate": "minecraft:stored_enchantments",
+                                                                                                "value": [
+                                                                                                  {
+                                                                                                    "enchantments": "minecraft:unbreaking",
+                                                                                                    "levels": {
+                                                                                                      "min": 1,
+                                                                                                      "max": 3
+                                                                                                    }
+                                                                                                  }
+                                                                                                ],
+                                                                                                "on_true": {
+                                                                                                  "type": "minecraft:model",
+                                                                                                  "model": "carl:item/unbreaking"
+                                                                                                },
+                                                                                                "on_false": {
+                                                                                                  "type": "minecraft:model",
+                                                                                                  "model": "minecraft:item/enchanted_book"
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:select",
+      "property": "minecraft:component",
+      "component": "minecraft:stored_enchantments",
+      "cases": [
+        {
+          "model": {
+            "type": "minecraft:model",
+            "model": "tooltrims:item/linear_template"
+          },
+          "when": {
+            "tooltrims:_a_linear_template": 1
+          }
+        },
+        {
+          "model": {
+            "type": "minecraft:model",
+            "model": "tooltrims:item/tracks_template"
+          },
+          "when": {
+            "tooltrims:_b_tracks_template": 1
+          }
+        },
+        {
+          "model": {
+            "type": "minecraft:model",
+            "model": "tooltrims:item/charge_template"
+          },
+          "when": {
+            "tooltrims:_c_charge_template": 1
+          }
+        },
+        {
+          "model": {
+            "type": "minecraft:model",
+            "model": "tooltrims:item/frost_template"
+          },
+          "when": {
+            "tooltrims:_d_frost_template": 1
+          }
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:condition",
+        "property": "minecraft:component",
+        "predicate": "minecraft:stored_enchantments",
+        "value": [
+          {
+            "enchantments": "minecraft:wind_burst",
+            "levels": {
+              "min": 1,
+              "max": 3
+            }
+          }
+        ],
+        "on_true": {
+          "type": "minecraft:model",
+          "model": "carl:item/wind_burst"
+        },
+        "on_false": {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:stored_enchantments",
+          "value": [
+            {
+              "enchantments": "minecraft:vanishing_curse",
+              "levels": 1
+            }
+          ],
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "carl:item/vanishing_curse"
+          },
+          "on_false": {
+            "type": "minecraft:condition",
+            "property": "minecraft:component",
+            "predicate": "minecraft:stored_enchantments",
+            "value": [
+              {
+                "enchantments": "minecraft:breach",
+                "levels": {
+                  "min": 1,
+                  "max": 4
+                }
+              }
+            ],
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "carl:item/breach"
+            },
+            "on_false": {
+              "type": "minecraft:condition",
+              "property": "minecraft:component",
+              "predicate": "minecraft:stored_enchantments",
+              "value": [
+                {
+                  "enchantments": "minecraft:density",
+                  "levels": {
+                    "min": 1,
+                    "max": 5
+                  }
+                }
+              ],
+              "on_true": {
+                "type": "minecraft:model",
+                "model": "carl:item/density"
+              },
+              "on_false": {
+                "type": "minecraft:condition",
+                "property": "minecraft:component",
+                "predicate": "minecraft:stored_enchantments",
+                "value": [
+                  {
+                    "enchantments": "minecraft:fortune",
+                    "levels": {
+                      "min": 1,
+                      "max": 3
+                    }
+                  }
+                ],
+                "on_true": {
+                  "type": "minecraft:model",
+                  "model": "carl:item/fortune"
+                },
+                "on_false": {
+                  "type": "minecraft:condition",
+                  "property": "minecraft:component",
+                  "predicate": "minecraft:stored_enchantments",
+                  "value": [
+                    {
+                      "enchantments": "minecraft:silk_touch",
+                      "levels": 1
+                    }
+                  ],
+                  "on_true": {
+                    "type": "minecraft:model",
+                    "model": "carl:item/silk_touch"
+                  },
+                  "on_false": {
+                    "type": "minecraft:condition",
+                    "property": "minecraft:component",
+                    "predicate": "minecraft:stored_enchantments",
+                    "value": [
+                      {
+                        "enchantments": "minecraft:efficiency",
+                        "levels": {
+                          "min": 1,
+                          "max": 5
+                        }
+                      }
+                    ],
+                    "on_true": {
+                      "type": "minecraft:model",
+                      "model": "carl:item/efficiency"
+                    },
+                    "on_false": {
+                      "type": "minecraft:condition",
+                      "property": "minecraft:component",
+                      "predicate": "minecraft:stored_enchantments",
+                      "value": [
+                        {
+                          "enchantments": "minecraft:infinity",
+                          "levels": 1
+                        }
+                      ],
+                      "on_true": {
+                        "type": "minecraft:model",
+                        "model": "carl:item/infinity"
+                      },
+                      "on_false": {
+                        "type": "minecraft:condition",
+                        "property": "minecraft:component",
+                        "predicate": "minecraft:stored_enchantments",
+                        "value": [
+                          {
+                            "enchantments": "minecraft:smite",
+                            "levels": {
+                              "min": 1,
+                              "max": 5
+                            }
+                          }
+                        ],
+                        "on_true": {
+                          "type": "minecraft:model",
+                          "model": "carl:item/smite"
+                        },
+                        "on_false": {
+                          "type": "minecraft:condition",
+                          "property": "minecraft:component",
+                          "predicate": "minecraft:stored_enchantments",
+                          "value": [
+                            {
+                              "enchantments": "minecraft:fire_aspect",
+                              "levels": {
+                                "min": 1,
+                                "max": 2
+                              }
+                            }
+                          ],
+                          "on_true": {
+                            "type": "minecraft:model",
+                            "model": "carl:item/fire_aspect"
+                          },
+                          "on_false": {
+                            "type": "minecraft:condition",
+                            "property": "minecraft:component",
+                            "predicate": "minecraft:stored_enchantments",
+                            "value": [
+                              {
+                                "enchantments": "minecraft:aqua_affinity",
+                                "levels": 1
+                              }
+                            ],
+                            "on_true": {
+                              "type": "minecraft:model",
+                              "model": "carl:item/aqua_affinity"
+                            },
+                            "on_false": {
+                              "type": "minecraft:condition",
+                              "property": "minecraft:component",
+                              "predicate": "minecraft:stored_enchantments",
+                              "value": [
+                                {
+                                  "enchantments": "minecraft:lunge",
+                                  "levels": {
+                                    "min": 1,
+                                    "max": 3
+                                  }
+                                }
+                              ],
+                              "on_true": {
+                                "type": "minecraft:model",
+                                "model": "carl:item/lunge"
+                              },
+                              "on_false": {
+                                "type": "minecraft:condition",
+                                "property": "minecraft:component",
+                                "predicate": "minecraft:stored_enchantments",
+                                "value": [
+                                  {
+                                    "enchantments": "minecraft:sharpness",
+                                    "levels": {
+                                      "min": 1,
+                                      "max": 5
+                                    }
+                                  }
+                                ],
+                                "on_true": {
+                                  "type": "minecraft:model",
+                                  "model": "carl:item/sharpness"
+                                },
+                                "on_false": {
+                                  "type": "minecraft:condition",
+                                  "property": "minecraft:component",
+                                  "predicate": "minecraft:stored_enchantments",
+                                  "value": [
+                                    {
+                                      "enchantments": "minecraft:knockback",
+                                      "levels": {
+                                        "min": 1,
+                                        "max": 2
+                                      }
+                                    }
+                                  ],
+                                  "on_true": {
+                                    "type": "minecraft:model",
+                                    "model": "carl:item/knockback"
+                                  },
+                                  "on_false": {
+                                    "type": "minecraft:condition",
+                                    "property": "minecraft:component",
+                                    "predicate": "minecraft:stored_enchantments",
+                                    "value": [
+                                      {
+                                        "enchantments": "minecraft:channeling",
+                                        "levels": 1
+                                      }
+                                    ],
+                                    "on_true": {
+                                      "type": "minecraft:model",
+                                      "model": "carl:item/channeling"
+                                    },
+                                    "on_false": {
+                                      "type": "minecraft:condition",
+                                      "property": "minecraft:component",
+                                      "predicate": "minecraft:stored_enchantments",
+                                      "value": [
+                                        {
+                                          "enchantments": "minecraft:flame",
+                                          "levels": 1
+                                        }
+                                      ],
+                                      "on_true": {
+                                        "type": "minecraft:model",
+                                        "model": "carl:item/flame"
+                                      },
+                                      "on_false": {
+                                        "type": "minecraft:condition",
+                                        "property": "minecraft:component",
+                                        "predicate": "minecraft:stored_enchantments",
+                                        "value": [
+                                          {
+                                            "enchantments": "minecraft:punch",
+                                            "levels": {
+                                              "min": 1,
+                                              "max": 2
+                                            }
+                                          }
+                                        ],
+                                        "on_true": {
+                                          "type": "minecraft:model",
+                                          "model": "carl:item/punch"
+                                        },
+                                        "on_false": {
+                                          "type": "minecraft:condition",
+                                          "property": "minecraft:component",
+                                          "predicate": "minecraft:stored_enchantments",
+                                          "value": [
+                                            {
+                                              "enchantments": "minecraft:power",
+                                              "levels": {
+                                                "min": 1,
+                                                "max": 5
+                                              }
+                                            }
+                                          ],
+                                          "on_true": {
+                                            "type": "minecraft:model",
+                                            "model": "carl:item/power"
+                                          },
+                                          "on_false": {
+                                            "type": "minecraft:condition",
+                                            "property": "minecraft:component",
+                                            "predicate": "minecraft:stored_enchantments",
+                                            "value": [
+                                              {
+                                                "enchantments": "minecraft:riptide",
+                                                "levels": {
+                                                  "min": 1,
+                                                  "max": 3
+                                                }
+                                              }
+                                            ],
+                                            "on_true": {
+                                              "type": "minecraft:model",
+                                              "model": "carl:item/riptide"
+                                            },
+                                            "on_false": {
+                                              "type": "minecraft:condition",
+                                              "property": "minecraft:component",
+                                              "predicate": "minecraft:stored_enchantments",
+                                              "value": [
+                                                {
+                                                  "enchantments": "minecraft:loyalty",
+                                                  "levels": {
+                                                    "min": 1,
+                                                    "max": 3
+                                                  }
+                                                }
+                                              ],
+                                              "on_true": {
+                                                "type": "minecraft:model",
+                                                "model": "carl:item/loyalty"
+                                              },
+                                              "on_false": {
+                                                "type": "minecraft:condition",
+                                                "property": "minecraft:component",
+                                                "predicate": "minecraft:stored_enchantments",
+                                                "value": [
+                                                  {
+                                                    "enchantments": "minecraft:impaling",
+                                                    "levels": {
+                                                      "min": 1,
+                                                      "max": 5
+                                                    }
+                                                  }
+                                                ],
+                                                "on_true": {
+                                                  "type": "minecraft:model",
+                                                  "model": "carl:item/impaling"
+                                                },
+                                                "on_false": {
+                                                  "type": "minecraft:condition",
+                                                  "property": "minecraft:component",
+                                                  "predicate": "minecraft:stored_enchantments",
+                                                  "value": [
+                                                    {
+                                                      "enchantments": "minecraft:looting",
+                                                      "levels": {
+                                                        "min": 1,
+                                                        "max": 3
+                                                      }
+                                                    }
+                                                  ],
+                                                  "on_true": {
+                                                    "type": "minecraft:model",
+                                                    "model": "carl:item/looting"
+                                                  },
+                                                  "on_false": {
+                                                    "type": "minecraft:condition",
+                                                    "property": "minecraft:component",
+                                                    "predicate": "minecraft:stored_enchantments",
+                                                    "value": [
+                                                      {
+                                                        "enchantments": "minecraft:sweeping_edge",
+                                                        "levels": {
+                                                          "min": 1,
+                                                          "max": 3
+                                                        }
+                                                      }
+                                                    ],
+                                                    "on_true": {
+                                                      "type": "minecraft:model",
+                                                      "model": "carl:item/sweeping_edge"
+                                                    },
+                                                    "on_false": {
+                                                      "type": "minecraft:condition",
+                                                      "property": "minecraft:component",
+                                                      "predicate": "minecraft:stored_enchantments",
+                                                      "value": [
+                                                        {
+                                                          "enchantments": "minecraft:binding_curse",
+                                                          "levels": 1
+                                                        }
+                                                      ],
+                                                      "on_true": {
+                                                        "type": "minecraft:model",
+                                                        "model": "carl:item/binding_curse"
+                                                      },
+                                                      "on_false": {
+                                                        "type": "minecraft:condition",
+                                                        "property": "minecraft:component",
+                                                        "predicate": "minecraft:stored_enchantments",
+                                                        "value": [
+                                                          {
+                                                            "enchantments": "minecraft:respiration",
+                                                            "levels": {
+                                                              "min": 1,
+                                                              "max": 3
+                                                            }
+                                                          }
+                                                        ],
+                                                        "on_true": {
+                                                          "type": "minecraft:model",
+                                                          "model": "carl:item/respiration"
+                                                        },
+                                                        "on_false": {
+                                                          "type": "minecraft:condition",
+                                                          "property": "minecraft:component",
+                                                          "predicate": "minecraft:stored_enchantments",
+                                                          "value": [
+                                                            {
+                                                              "enchantments": "minecraft:mending",
+                                                              "levels": 1
+                                                            }
+                                                          ],
+                                                          "on_true": {
+                                                            "type": "minecraft:model",
+                                                            "model": "carl:item/mending"
+                                                          },
+                                                          "on_false": {
+                                                            "type": "minecraft:condition",
+                                                            "property": "minecraft:component",
+                                                            "predicate": "minecraft:stored_enchantments",
+                                                            "value": [
+                                                              {
+                                                                "enchantments": "minecraft:frost_walker",
+                                                                "levels": {
+                                                                  "min": 1,
+                                                                  "max": 2
+                                                                }
+                                                              }
+                                                            ],
+                                                            "on_true": {
+                                                              "type": "minecraft:model",
+                                                              "model": "carl:item/frost_walker"
+                                                            },
+                                                            "on_false": {
+                                                              "type": "minecraft:condition",
+                                                              "property": "minecraft:component",
+                                                              "predicate": "minecraft:stored_enchantments",
+                                                              "value": [
+                                                                {
+                                                                  "enchantments": "minecraft:depth_strider",
+                                                                  "levels": {
+                                                                    "min": 1,
+                                                                    "max": 3
+                                                                  }
+                                                                }
+                                                              ],
+                                                              "on_true": {
+                                                                "type": "minecraft:model",
+                                                                "model": "carl:item/depth_strider"
+                                                              },
+                                                              "on_false": {
+                                                                "type": "minecraft:condition",
+                                                                "property": "minecraft:component",
+                                                                "predicate": "minecraft:stored_enchantments",
+                                                                "value": [
+                                                                  {
+                                                                    "enchantments": "minecraft:thorns",
+                                                                    "levels": {
+                                                                      "min": 1,
+                                                                      "max": 3
+                                                                    }
+                                                                  }
+                                                                ],
+                                                                "on_true": {
+                                                                  "type": "minecraft:model",
+                                                                  "model": "carl:item/thorns"
+                                                                },
+                                                                "on_false": {
+                                                                  "type": "minecraft:condition",
+                                                                  "property": "minecraft:component",
+                                                                  "predicate": "minecraft:stored_enchantments",
+                                                                  "value": [
+                                                                    {
+                                                                      "enchantments": "minecraft:swift_sneak",
+                                                                      "levels": {
+                                                                        "min": 1,
+                                                                        "max": 3
+                                                                      }
+                                                                    }
+                                                                  ],
+                                                                  "on_true": {
+                                                                    "type": "minecraft:model",
+                                                                    "model": "carl:item/swift_sneak"
+                                                                  },
+                                                                  "on_false": {
+                                                                    "type": "minecraft:condition",
+                                                                    "property": "minecraft:component",
+                                                                    "predicate": "minecraft:stored_enchantments",
+                                                                    "value": [
+                                                                      {
+                                                                        "enchantments": "minecraft:fire_protection",
+                                                                        "levels": {
+                                                                          "min": 1,
+                                                                          "max": 4
+                                                                        }
+                                                                      }
+                                                                    ],
+                                                                    "on_true": {
+                                                                      "type": "minecraft:model",
+                                                                      "model": "carl:item/fire_protection"
+                                                                    },
+                                                                    "on_false": {
+                                                                      "type": "minecraft:condition",
+                                                                      "property": "minecraft:component",
+                                                                      "predicate": "minecraft:stored_enchantments",
+                                                                      "value": [
+                                                                        {
+                                                                          "enchantments": "minecraft:blast_protection",
+                                                                          "levels": {
+                                                                            "min": 1,
+                                                                            "max": 4
+                                                                          }
+                                                                        }
+                                                                      ],
+                                                                      "on_true": {
+                                                                        "type": "minecraft:model",
+                                                                        "model": "carl:item/blast_protection"
+                                                                      },
+                                                                      "on_false": {
+                                                                        "type": "minecraft:condition",
+                                                                        "property": "minecraft:component",
+                                                                        "predicate": "minecraft:stored_enchantments",
+                                                                        "value": [
+                                                                          {
+                                                                            "enchantments": "minecraft:soul_speed",
+                                                                            "levels": {
+                                                                              "min": 1,
+                                                                              "max": 3
+                                                                            }
+                                                                          }
+                                                                        ],
+                                                                        "on_true": {
+                                                                          "type": "minecraft:model",
+                                                                          "model": "carl:item/soul_speed"
+                                                                        },
+                                                                        "on_false": {
+                                                                          "type": "minecraft:condition",
+                                                                          "property": "minecraft:component",
+                                                                          "predicate": "minecraft:stored_enchantments",
+                                                                          "value": [
+                                                                            {
+                                                                              "enchantments": "minecraft:feather_falling",
+                                                                              "levels": {
+                                                                                "min": 1,
+                                                                                "max": 4
+                                                                              }
+                                                                            }
+                                                                          ],
+                                                                          "on_true": {
+                                                                            "type": "minecraft:model",
+                                                                            "model": "carl:item/feather_falling"
+                                                                          },
+                                                                          "on_false": {
+                                                                            "type": "minecraft:condition",
+                                                                            "property": "minecraft:component",
+                                                                            "predicate": "minecraft:stored_enchantments",
+                                                                            "value": [
+                                                                              {
+                                                                                "enchantments": "minecraft:projectile_protection",
+                                                                                "levels": {
+                                                                                  "min": 1,
+                                                                                  "max": 4
+                                                                                }
+                                                                              }
+                                                                            ],
+                                                                            "on_true": {
+                                                                              "type": "minecraft:model",
+                                                                              "model": "carl:item/projectile_protection"
+                                                                            },
+                                                                            "on_false": {
+                                                                              "type": "minecraft:condition",
+                                                                              "property": "minecraft:component",
+                                                                              "predicate": "minecraft:stored_enchantments",
+                                                                              "value": [
+                                                                                {
+                                                                                  "enchantments": "minecraft:protection",
+                                                                                  "levels": {
+                                                                                    "min": 1,
+                                                                                    "max": 4
+                                                                                  }
+                                                                                }
+                                                                              ],
+                                                                              "on_true": {
+                                                                                "type": "minecraft:model",
+                                                                                "model": "carl:item/protection"
+                                                                              },
+                                                                              "on_false": {
+                                                                                "type": "minecraft:condition",
+                                                                                "property": "minecraft:component",
+                                                                                "predicate": "minecraft:stored_enchantments",
+                                                                                "value": [
+                                                                                  {
+                                                                                    "enchantments": "minecraft:bane_of_arthropods",
+                                                                                    "levels": {
+                                                                                      "min": 1,
+                                                                                      "max": 5
+                                                                                    }
+                                                                                  }
+                                                                                ],
+                                                                                "on_true": {
+                                                                                  "type": "minecraft:model",
+                                                                                  "model": "carl:item/bane_of_arthropods"
+                                                                                },
+                                                                                "on_false": {
+                                                                                  "type": "minecraft:condition",
+                                                                                  "property": "minecraft:component",
+                                                                                  "predicate": "minecraft:stored_enchantments",
+                                                                                  "value": [
+                                                                                    {
+                                                                                      "enchantments": "minecraft:multishot",
+                                                                                      "levels": 1
+                                                                                    }
+                                                                                  ],
+                                                                                  "on_true": {
+                                                                                    "type": "minecraft:model",
+                                                                                    "model": "carl:item/multishot"
+                                                                                  },
+                                                                                  "on_false": {
+                                                                                    "type": "minecraft:condition",
+                                                                                    "property": "minecraft:component",
+                                                                                    "predicate": "minecraft:stored_enchantments",
+                                                                                    "value": [
+                                                                                      {
+                                                                                        "enchantments": "minecraft:piercing",
+                                                                                        "levels": {
+                                                                                          "min": 1,
+                                                                                          "max": 4
+                                                                                        }
+                                                                                      }
+                                                                                    ],
+                                                                                    "on_true": {
+                                                                                      "type": "minecraft:model",
+                                                                                      "model": "carl:item/piercing"
+                                                                                    },
+                                                                                    "on_false": {
+                                                                                      "type": "minecraft:condition",
+                                                                                      "property": "minecraft:component",
+                                                                                      "predicate": "minecraft:stored_enchantments",
+                                                                                      "value": [
+                                                                                        {
+                                                                                          "enchantments": "minecraft:quick_charge",
+                                                                                          "levels": {
+                                                                                            "min": 1,
+                                                                                            "max": 3
+                                                                                          }
+                                                                                        }
+                                                                                      ],
+                                                                                      "on_true": {
+                                                                                        "type": "minecraft:model",
+                                                                                        "model": "carl:item/quick_charge"
+                                                                                      },
+                                                                                      "on_false": {
+                                                                                        "type": "minecraft:condition",
+                                                                                        "property": "minecraft:component",
+                                                                                        "predicate": "minecraft:stored_enchantments",
+                                                                                        "value": [
+                                                                                          {
+                                                                                            "enchantments": "minecraft:lure",
+                                                                                            "levels": {
+                                                                                              "min": 1,
+                                                                                              "max": 3
+                                                                                            }
+                                                                                          }
+                                                                                        ],
+                                                                                        "on_true": {
+                                                                                          "type": "minecraft:model",
+                                                                                          "model": "carl:item/lure"
+                                                                                        },
+                                                                                        "on_false": {
+                                                                                          "type": "minecraft:condition",
+                                                                                          "property": "minecraft:component",
+                                                                                          "predicate": "minecraft:stored_enchantments",
+                                                                                          "value": [
+                                                                                            {
+                                                                                              "enchantments": "minecraft:luck_of_the_sea",
+                                                                                              "levels": {
+                                                                                                "min": 1,
+                                                                                                "max": 3
+                                                                                              }
+                                                                                            }
+                                                                                          ],
+                                                                                          "on_true": {
                                                                                             "type": "minecraft:model",
-                                                                                            "model": "minecraft:item/enchanted_book"
+                                                                                            "model": "carl:item/luck_of_the_sea"
+                                                                                          },
+                                                                                          "on_false": {
+                                                                                            "type": "minecraft:condition",
+                                                                                            "property": "minecraft:component",
+                                                                                            "predicate": "minecraft:stored_enchantments",
+                                                                                            "value": [
+                                                                                              {
+                                                                                                "enchantments": "minecraft:unbreaking",
+                                                                                                "levels": {
+                                                                                                  "min": 1,
+                                                                                                  "max": 3
+                                                                                                }
+                                                                                              }
+                                                                                            ],
+                                                                                            "on_true": {
+                                                                                              "type": "minecraft:model",
+                                                                                              "model": "carl:item/unbreaking"
+                                                                                            },
+                                                                                            "on_false": {
+                                                                                              "type": "minecraft:model",
+                                                                                              "model": "minecraft:item/enchanted_book"
+                                                                                            }
                                                                                           }
                                                                                         }
                                                                                       }
@@ -751,3 +1596,4 @@
       }
     }
   }
+}
