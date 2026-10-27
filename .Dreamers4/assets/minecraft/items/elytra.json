@@ -1,0 +1,68 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "property": "minecraft:has_component",
+    "component": "minecraft:custom_model_data",
+    "on_false": {
+      "type": "minecraft:condition",
+      "property": "minecraft:broken",
+      "on_true": {
+        "type": "minecraft:special",
+        "base": "minecraft:elytra",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/broken_elytra"
+        }
+      },
+      "on_false": {
+        "type": "minecraft:special",
+        "base": "minecraft:elytra",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/elytra"
+        }
+      }
+    },
+    "on_true": {
+      "type": "minecraft:range_dispatch",
+      "property": "minecraft:custom_model_data",
+      "fallback": {
+        "type": "minecraft:condition",
+        "property": "minecraft:broken",
+        "on_true": {
+          "type": "minecraft:special",
+          "base": "minecraft:elytra",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/broken_elytra"
+          }
+        },
+        "on_false": {
+          "type": "minecraft:special",
+          "base": "minecraft:elytra",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/elytra"
+          }
+        }
+      },
+      "entries": [
+        {
+          "threshold": 1450201.0,
+          "model": {
+            "type": "minecraft:condition",
+            "property": "minecraft:broken",
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "incendium:item/infernal_elytra_broken"
+            },
+            "on_false": {
+              "type": "minecraft:model",
+              "model": "incendium:item/infernal_elytra"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

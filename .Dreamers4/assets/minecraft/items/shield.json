@@ -1,0 +1,113 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "property": "minecraft:has_component",
+    "component": "minecraft:custom_model_data",
+    "on_false": {
+      "type": "minecraft:condition",
+      "property": "minecraft:using_item",
+      "on_false": {
+        "type": "minecraft:special",
+        "base": "minecraft:shield",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/shield"
+        }
+      },
+      "on_true": {
+        "type": "minecraft:special",
+        "base": "minecraft:shield",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/shield_blocking"
+        }
+      }
+    },
+    "on_true": {
+      "type": "minecraft:range_dispatch",
+      "property": "minecraft:custom_model_data",
+      "fallback": {
+        "type": "minecraft:condition",
+        "property": "minecraft:using_item",
+        "on_false": {
+          "type": "minecraft:special",
+          "base": "minecraft:shield",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/shield"
+          }
+        },
+        "on_true": {
+          "type": "minecraft:special",
+          "base": "minecraft:shield",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/shield_blocking"
+          }
+        }
+      },
+      "entries": [
+        {
+          "threshold": 1450300.0,
+          "model": {
+            "type": "minecraft:condition",
+            "property": "minecraft:using_item",
+            "on_false": {
+              "type": "minecraft:model",
+              "model": "incendium:item/necrotic_shield"
+            },
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "incendium:item/necrotic_shield_blocking"
+            }
+          }
+        },
+        {
+          "threshold": 1450301.0,
+          "model": {
+            "type": "minecraft:condition",
+            "property": "minecraft:using_item",
+            "on_false": {
+              "type": "minecraft:model",
+              "model": "incendium:item/prismatic_shield"
+            },
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "incendium:item/prismatic_shield_blocking"
+            }
+          }
+        },
+        {
+          "threshold": 1450302.0,
+          "model": {
+            "type": "minecraft:condition",
+            "property": "minecraft:using_item",
+            "on_false": {
+              "type": "minecraft:model",
+              "model": "incendium:item/radiation_shield"
+            },
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "incendium:item/radiation_shield_blocking"
+            }
+          }
+        },
+        {
+          "threshold": 1450303.0,
+          "model": {
+            "type": "minecraft:condition",
+            "property": "minecraft:using_item",
+            "on_false": {
+              "type": "minecraft:model",
+              "model": "incendium:item/prismatic_shield1"
+            },
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "incendium:item/prismatic_shield1_blocking"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

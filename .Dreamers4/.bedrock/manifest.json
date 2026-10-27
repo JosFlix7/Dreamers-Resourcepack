@@ -1,0 +1,30 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "Dreamers 4 Bedrock",
+        "description": "Iconos, idiomas y sonidos de Dreamers 4 para Bedrock 1.26.50 (Java 26.3)",
+        "uuid": "c8c82fc8-76cc-479c-97ec-3adbf87ec012",
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            26,
+            50
+        ]
+    },
+    "modules": [
+        {
+            "description": "Recursos de ítems custom, idiomas y sonidos terranova",
+            "type": "resources",
+            "uuid": "6817361a-372a-4a5c-9ffc-dbf340adf0b1",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ]
+}

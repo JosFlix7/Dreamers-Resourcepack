@@ -1,0 +1,28 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "property": "minecraft:has_component",
+    "component": "minecraft:custom_model_data",
+    "on_false": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/glowstone_dust"
+    },
+    "on_true": {
+      "type": "minecraft:range_dispatch",
+      "property": "minecraft:custom_model_data",
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/glowstone_dust"
+      },
+      "entries": [
+        {
+          "threshold": 1450401.0,
+          "model": {
+            "type": "minecraft:model",
+            "model": "incendium:item/powder"
+          }
+        }
+      ]
+    }
+  }
+}
