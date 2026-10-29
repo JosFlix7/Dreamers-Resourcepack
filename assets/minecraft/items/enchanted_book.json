@@ -1,0 +1,40 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:stored_enchantments",
+    "cases": [
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "dreamers:item/nutritotem"
+        },
+        "when": {
+          "dreamers:nutritotem": 1
+        }
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "dreamers:item/totem_of_undeads"
+        },
+        "when": {
+          "dreamers:totem_of_undeads": 1
+        }
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "dreamers:item/dreamers_totem"
+        },
+        "when": {
+          "dreamers:dreamers_totem": 1
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/enchanted_book"
+    }
+  }
+}

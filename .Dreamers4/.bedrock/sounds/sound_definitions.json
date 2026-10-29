@@ -1,21 +1,41 @@
 {
     "format_version": "1.14.0",
     "sound_definitions": {
-        "terranova.death": {
+        "dreamers:dreamers.effect_fortnite": {
             "category": "ambient",
             "sounds": [
                 {
-                    "name": "sounds/terranova_death",
+                    "name": "sounds/effect_fortnite",
                     "stream": true,
                     "volume": 1.0
                 }
             ]
         },
-        "terranova.totem": {
+        "dreamers:dreamers.effect_bell": {
             "category": "player",
             "sounds": [
                 {
-                    "name": "sounds/terranova_totem",
+                    "name": "sounds/effect_bell",
+                    "stream": true,
+                    "volume": 1.0
+                }
+            ]
+        },
+        "dreamers:dreamers.effect_rbd": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/effect_rbd",
+                    "stream": true,
+                    "volume": 1.0
+                }
+            ]
+        },
+        "dreamers:dreamers.totem": {
+            "category": "player",
+            "sounds": [
+                {
+                    "name": "sounds/dreamers_totem",
                     "stream": true,
                     "volume": 1.0
                 }

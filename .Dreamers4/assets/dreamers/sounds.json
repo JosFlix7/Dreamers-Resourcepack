@@ -1,0 +1,6 @@
+{
+	"dreamers.effect_bell": {"sounds": [{"name": "effect_bell","stream": true}]},
+	"dreamers.effect_fortnite": {"sounds": [{"name": "effect_fortnite","stream": true}]},
+	"dreamers.effect_rbd": {"sounds": [{"name": "effect_rbd","stream": true}]},
+	"dreamers.totem": {"sounds": [{"name": "dreamers_totem","stream": true}]}
+}

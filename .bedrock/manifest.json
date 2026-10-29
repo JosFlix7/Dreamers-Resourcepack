@@ -2,14 +2,14 @@
     "format_version": 2,
     "header": {
         "name": "Dreamers Resourcepack",
-        "description": "Sonidos de muerte y tótem para Bedrock",
+        "description": "Sonidos y texturas del namespace dreamers para Bedrock",
         "uuid": "5972f966-47d1-4276-adec-15ccdf05105b",
         "version": [1, 0, 0],
         "min_engine_version": [1, 21, 100]
     },
     "modules": [
         {
-            "description": "Sonidos de muerte y tótem",
+            "description": "Sonidos y texturas dreamers",
             "type": "resources",
             "uuid": "f0d02030-6754-4ea3-be3a-ea615f3e79c7",
             "version": [1, 0, 0]

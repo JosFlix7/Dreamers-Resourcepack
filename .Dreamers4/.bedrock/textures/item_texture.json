@@ -6259,6 +6259,18 @@
     },
     "tooltrims_wooden_sword_frost_resin": {
       "textures": "textures/items/tooltrims_trims/wooden_sword_frost_resin"
+    },
+    "dreamers_totem": {
+      "textures": "textures/items/dreamers/dreamers_totem"
+    },
+    "dreamers_nutritotem": {
+      "textures": "textures/items/dreamers/nutritotem"
+    },
+    "dreamers_totem_of_anime": {
+      "textures": "textures/items/dreamers/totem_of_anime"
+    },
+    "dreamers_totem_of_undeads": {
+      "textures": "textures/items/dreamers/totem_of_undeads"
     }
   }
 }

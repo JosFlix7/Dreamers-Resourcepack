@@ -1,6 +1,38 @@
 {
   "format_version": 2,
   "items": {
+    "minecraft:totem_of_undying": [
+      {
+        "type": "definition",
+        "model": "dreamers:nutritotem",
+        "bedrock_identifier": "dreamers:nutritotem",
+        "display_name": "Nutritótem",
+        "bedrock_options": {
+          "icon": "dreamers_nutritotem",
+          "creative_category": "equipment"
+        }
+      },
+      {
+        "type": "definition",
+        "model": "dreamers:totem_of_undeads",
+        "bedrock_identifier": "dreamers:totem_of_undeads",
+        "display_name": "Tótem de los no-muertos",
+        "bedrock_options": {
+          "icon": "dreamers_totem_of_undeads",
+          "creative_category": "equipment"
+        }
+      },
+      {
+        "type": "definition",
+        "model": "dreamers:dreamers_totem",
+        "bedrock_identifier": "dreamers:dreamers_totem",
+        "display_name": "Tótem Dreamer",
+        "bedrock_options": {
+          "icon": "dreamers_totem",
+          "creative_category": "equipment"
+        }
+      }
+    ],
     "minecraft:blaze_rod": [
       {
         "bedrock_identifier": "kattersstructures:the_beast_within",
