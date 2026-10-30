@@ -6266,6 +6266,9 @@
     "dreamers_nutritotem": {
       "textures": "textures/items/dreamers/nutritotem"
     },
+    "dreamers_totem_ferreo": {
+      "textures": "textures/items/dreamers/totem_ferreo"
+    },
     "dreamers_totem_of_anime": {
       "textures": "textures/items/dreamers/totem_of_anime"
     },

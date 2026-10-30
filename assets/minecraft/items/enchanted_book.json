@@ -16,6 +16,15 @@
       {
         "model": {
           "type": "minecraft:model",
+          "model": "dreamers:item/totem_ferreo"
+        },
+        "when": {
+          "dreamers:totem_ferreo": 1
+        }
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
           "model": "dreamers:item/totem_of_undeads"
         },
         "when": {

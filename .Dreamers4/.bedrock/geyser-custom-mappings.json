@@ -14,6 +14,16 @@
       },
       {
         "type": "definition",
+        "model": "dreamers:totem_ferreo",
+        "bedrock_identifier": "dreamers:totem_ferreo",
+        "display_name": "Tótem Férreo",
+        "bedrock_options": {
+          "icon": "dreamers_totem_ferreo",
+          "creative_category": "equipment"
+        }
+      },
+      {
+        "type": "definition",
         "model": "dreamers:totem_of_undeads",
         "bedrock_identifier": "dreamers:totem_of_undeads",
         "display_name": "Tótem de los no-muertos",
