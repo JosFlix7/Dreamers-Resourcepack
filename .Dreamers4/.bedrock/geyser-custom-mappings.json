@@ -43,6 +43,18 @@
         }
       }
     ],
+    "minecraft:bundle": [
+      {
+        "type": "definition",
+        "model": "dreamers:enderbag",
+        "bedrock_identifier": "dreamers:enderbag",
+        "display_name": "Enderbag",
+        "bedrock_options": {
+          "icon": "dreamers_enderbag",
+          "creative_category": "items"
+        }
+      }
+    ],
     "minecraft:blaze_rod": [
       {
         "bedrock_identifier": "kattersstructures:the_beast_within",
