@@ -16,6 +16,9 @@
         },
         "dreamers_totem_of_undeads": {
             "textures": "textures/items/dreamers/totem_of_undeads"
+        },
+        "dreamers_enderbag": {
+            "textures": "textures/items/dreamers/enderbag"
         }
     }
 }
