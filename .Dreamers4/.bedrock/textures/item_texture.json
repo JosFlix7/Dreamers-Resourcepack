@@ -6275,6 +6275,9 @@
     "dreamers_totem_of_undeads": {
       "textures": "textures/items/dreamers/totem_of_undeads"
     },
+    "dreamers_totem_yunque": {
+      "textures": "textures/items/dreamers/totem_yunque"
+    },
     "dreamers_enderbag": {
       "textures": "textures/items/dreamers/enderbag"
     }

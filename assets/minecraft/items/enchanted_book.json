@@ -39,6 +39,15 @@
         "when": {
           "dreamers:dreamers_totem": 1
         }
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "dreamers:item/totem_yunque"
+        },
+        "when": {
+          "dreamers:totem_yunque": 1
+        }
       }
     ],
     "fallback": {

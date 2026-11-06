@@ -41,6 +41,16 @@
           "icon": "dreamers_totem",
           "creative_category": "equipment"
         }
+      },
+      {
+        "type": "definition",
+        "model": "dreamers:totem_yunque",
+        "bedrock_identifier": "dreamers:totem_yunque",
+        "display_name": "Tótem Yunque",
+        "bedrock_options": {
+          "icon": "dreamers_totem_yunque",
+          "creative_category": "equipment"
+        }
       }
     ],
     "minecraft:ender_chest": [

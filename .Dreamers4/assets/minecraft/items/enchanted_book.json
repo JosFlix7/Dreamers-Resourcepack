@@ -49,6 +49,15 @@
             {
               "model": {
                 "type": "minecraft:model",
+                "model": "dreamers:item/totem_yunque"
+              },
+              "when": {
+                "dreamers:totem_yunque": 1
+              }
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
                 "model": "tooltrims:item/creative_menu_linear_template"
               },
               "when": {
@@ -876,6 +885,15 @@
           },
           "when": {
             "dreamers:dreamers_totem": 1
+          }
+        },
+        {
+          "model": {
+            "type": "minecraft:model",
+            "model": "dreamers:item/totem_yunque"
+          },
+          "when": {
+            "dreamers:totem_yunque": 1
           }
         },
         {
