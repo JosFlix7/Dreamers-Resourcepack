@@ -582,6 +582,45 @@
         },
         "type": "legacy",
         "custom_model_data": 311044
+      },
+      {
+        "bedrock_identifier": "stellarity:call_of_the_void",
+        "bedrock_options": {
+          "icon": "stellarity_item_call_of_the_void",
+          "display_handheld": true
+        },
+        "display_name": "Llamada del Vacío",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:call_of_the_void"
+      },
+      {
+        "bedrock_identifier": "stellarity:sharanga",
+        "bedrock_options": {
+          "icon": "stellarity_item_sharanga",
+          "display_handheld": true
+        },
+        "display_name": "Sharanga",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:sharanga"
+      },
+      {
+        "bedrock_identifier": "stellarity:spectral_fury",
+        "bedrock_options": {
+          "icon": "stellarity_item_spectral_fury",
+          "display_handheld": true
+        },
+        "display_name": "Furia Espectral",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:spectral_fury"
       }
     ],
     "minecraft:buried_treasure_map": [
@@ -1104,6 +1143,26 @@
         },
         "type": "legacy",
         "custom_model_data": 311044
+      },
+      {
+        "bedrock_identifier": "stellarity:prismatic_punch",
+        "bedrock_options": {
+          "icon": "stellarity_item_prismatic_punch",
+          "display_handheld": true
+        },
+        "display_name": "Golpe Prismático",
+        "type": "definition",
+        "model": "stellarity:prismatic_punch"
+      },
+      {
+        "bedrock_identifier": "stellarity:slayer_crossbow",
+        "bedrock_options": {
+          "icon": "stellarity_item_slayer_crossbow",
+          "display_handheld": true
+        },
+        "display_name": "Ballesta del Cazador",
+        "type": "definition",
+        "model": "stellarity:slayer_crossbow"
       }
     ],
     "minecraft:diamond_axe": [
@@ -2470,6 +2529,39 @@
         },
         "type": "legacy",
         "custom_model_data": 1450201
+      },
+      {
+        "bedrock_identifier": "stellarity:dragon_wings",
+        "bedrock_options": {
+          "icon": "stellarity_item_elytra_dragon_wings"
+        },
+        "display_name": "Dragon Wings",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:dragon_wings"
+      },
+      {
+        "bedrock_identifier": "stellarity:empress_wings",
+        "bedrock_options": {
+          "icon": "stellarity_item_elytra_empress_wings"
+        },
+        "display_name": "Empress Wings",
+        "type": "definition",
+        "model": "stellarity:empress_wings"
+      },
+      {
+        "bedrock_identifier": "stellarity:phantom_wings",
+        "bedrock_options": {
+          "icon": "stellarity_item_elytra_phantom_wings"
+        },
+        "display_name": "Phantom Wings",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:phantom_wings"
       }
     ],
     "minecraft:filled_map": [
@@ -2500,6 +2592,42 @@
           "value": "dnt:folded_chart",
           "index": 0
         }
+      },
+      {
+        "bedrock_identifier": "stellarity:chapel_of_light_map",
+        "bedrock_options": {
+          "icon": "stellarity_item_map_chapel_of_light_map"
+        },
+        "display_name": "Chapel Of Light Map",
+        "type": "definition",
+        "model": "stellarity:chapel_of_light_map"
+      },
+      {
+        "bedrock_identifier": "stellarity:end_city_map",
+        "bedrock_options": {
+          "icon": "stellarity_item_map_end_city_map"
+        },
+        "display_name": "End City Map",
+        "type": "definition",
+        "model": "stellarity:end_city_map"
+      },
+      {
+        "bedrock_identifier": "stellarity:end_village_map",
+        "bedrock_options": {
+          "icon": "stellarity_item_map_end_village_map"
+        },
+        "display_name": "End Village Map",
+        "type": "definition",
+        "model": "stellarity:end_village_map"
+      },
+      {
+        "bedrock_identifier": "stellarity:floating_treasure_map",
+        "bedrock_options": {
+          "icon": "stellarity_item_map_floating_treasure_map"
+        },
+        "display_name": "Floating Treasure Map",
+        "type": "definition",
+        "model": "stellarity:floating_treasure_map"
       }
     ],
     "minecraft:glowstone_dust": [
@@ -3436,6 +3564,42 @@
         },
         "type": "legacy",
         "custom_model_data": 311044
+      },
+      {
+        "bedrock_identifier": "stellarity:fluffy_hammer",
+        "bedrock_options": {
+          "icon": "stellarity_item_fluffy_hammer",
+          "display_handheld": true
+        },
+        "display_name": "Fluffy Hammer Of Justice",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:fluffy_hammer"
+      },
+      {
+        "bedrock_identifier": "stellarity:kaleidoscope",
+        "bedrock_options": {
+          "icon": "stellarity_item_kaleidoscope",
+          "display_handheld": true
+        },
+        "display_name": "Caleidoscopio",
+        "type": "definition",
+        "model": "stellarity:kaleidoscope"
+      },
+      {
+        "bedrock_identifier": "stellarity:shulker_axe",
+        "bedrock_options": {
+          "icon": "stellarity_item_shulker_axe",
+          "display_handheld": true
+        },
+        "display_name": "Hacha de Shulker",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:shulker_axe"
       }
     ],
     "minecraft:netherite_helmet": [
@@ -3898,6 +4062,19 @@
         },
         "type": "legacy",
         "custom_model_data": 311044
+      },
+      {
+        "bedrock_identifier": "stellarity:shulker_pickaxe",
+        "bedrock_options": {
+          "icon": "stellarity_item_shulker_pickaxe",
+          "display_handheld": true
+        },
+        "display_name": "Pico de Shulker",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:shulker_pickaxe"
       }
     ],
     "minecraft:netherite_scrap": [
@@ -4398,6 +4575,88 @@
         },
         "type": "legacy",
         "custom_model_data": 311044
+      },
+      {
+        "bedrock_identifier": "stellarity:dragonblade",
+        "bedrock_options": {
+          "icon": "stellarity_item_dragonblade",
+          "display_handheld": true
+        },
+        "display_name": "Espada de Dragón",
+        "type": "definition",
+        "model": "stellarity:dragonblade"
+      },
+      {
+        "bedrock_identifier": "stellarity:prismember",
+        "bedrock_options": {
+          "icon": "stellarity_item_prismember",
+          "display_handheld": true
+        },
+        "display_name": "Prisrecuerdo",
+        "type": "definition",
+        "model": "stellarity:prismember"
+      },
+      {
+        "bedrock_identifier": "stellarity:shulker_sword",
+        "bedrock_options": {
+          "icon": "stellarity_item_shulker_sword",
+          "display_handheld": true
+        },
+        "display_name": "Espada de Shulker",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:shulker_sword"
+      },
+      {
+        "bedrock_identifier": "stellarity:stellar_striker",
+        "bedrock_options": {
+          "icon": "stellarity_item_stellar_striker",
+          "display_handheld": true
+        },
+        "display_name": "Espada Estelar",
+        "type": "definition",
+        "model": "stellarity:stellar_striker"
+      },
+      {
+        "bedrock_identifier": "stellarity:tamaris",
+        "bedrock_options": {
+          "icon": "stellarity_item_tamaris",
+          "display_handheld": true
+        },
+        "display_name": "Tamaris",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:tamaris"
+      },
+      {
+        "bedrock_identifier": "stellarity:the_beginning",
+        "bedrock_options": {
+          "icon": "stellarity_item_the_beginning",
+          "display_handheld": true
+        },
+        "display_name": "The Beginning",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:the_beginning"
+      },
+      {
+        "bedrock_identifier": "stellarity:the_end",
+        "bedrock_options": {
+          "icon": "stellarity_item_the_end",
+          "display_handheld": true
+        },
+        "display_name": "The End",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:the_end"
       }
     ],
     "minecraft:rabbit_spawn_egg": [
@@ -4459,6 +4718,15 @@
         },
         "type": "definition",
         "model": "tooltrims:tracks_template"
+      },
+      {
+        "bedrock_identifier": "stellarity:voided_silverfish_spawn_egg",
+        "bedrock_options": {
+          "icon": "stellarity_item_spawn_egg_voided_silverfish_spawn_egg"
+        },
+        "display_name": "Voided Silverfish Spawn Egg",
+        "type": "definition",
+        "model": "stellarity:voided_silverfish_spawn_egg"
       }
     ],
     "minecraft:snow_golem_spawn_egg": [
@@ -5001,6 +5269,16 @@
         },
         "type": "legacy",
         "custom_model_data": 311044
+      },
+      {
+        "bedrock_identifier": "stellarity:sandstorm_trident",
+        "bedrock_options": {
+          "icon": "stellarity_item_sandstorm_trident_held",
+          "display_handheld": true
+        },
+        "display_name": "Sandstorm Trident",
+        "type": "definition",
+        "model": "stellarity:sandstorm_trident"
       }
     ],
     "minecraft:netherite_shovel": [
@@ -5443,6 +5721,19 @@
         },
         "type": "legacy",
         "custom_model_data": 311044
+      },
+      {
+        "bedrock_identifier": "stellarity:shulker_shovel",
+        "bedrock_options": {
+          "icon": "stellarity_item_shulker_shovel",
+          "display_handheld": true
+        },
+        "display_name": "Pala de Shulker",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:shulker_shovel"
       }
     ],
     "minecraft:netherite_hoe": [
@@ -5885,6 +6176,19 @@
         },
         "type": "legacy",
         "custom_model_data": 311044
+      },
+      {
+        "bedrock_identifier": "stellarity:shulker_hoe",
+        "bedrock_options": {
+          "icon": "stellarity_item_shulker_hoe",
+          "display_handheld": true
+        },
+        "display_name": "Azada de Shulker",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:shulker_hoe"
       }
     ],
     "minecraft:diamond_shovel": [
@@ -8979,6 +9283,16 @@
         },
         "type": "legacy",
         "custom_model_data": 311044
+      },
+      {
+        "bedrock_identifier": "stellarity:harvester",
+        "bedrock_options": {
+          "icon": "stellarity_item_harvester_tier_0",
+          "display_handheld": true
+        },
+        "display_name": "Harvester",
+        "type": "definition",
+        "model": "stellarity:harvester"
       }
     ],
     "minecraft:iron_pickaxe": [
@@ -13399,6 +13713,16 @@
         },
         "type": "legacy",
         "custom_model_data": 311044
+      },
+      {
+        "bedrock_identifier": "stellarity:ancient_wooden_sword",
+        "bedrock_options": {
+          "icon": "stellarity_item_ancient_wooden_sword",
+          "display_handheld": true
+        },
+        "display_name": "Espada Antigua de Madera",
+        "type": "definition",
+        "model": "stellarity:ancient_wooden_sword"
       }
     ],
     "minecraft:wooden_pickaxe": [
@@ -15167,6 +15491,19 @@
         },
         "type": "legacy",
         "custom_model_data": 311044
+      },
+      {
+        "bedrock_identifier": "stellarity:starless_scythe",
+        "bedrock_options": {
+          "icon": "stellarity_item_starless_scythe",
+          "display_handheld": true
+        },
+        "display_name": "Guadaña Destrellada",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:starless_scythe"
       }
     ],
     "minecraft:mace": [
@@ -20029,6 +20366,19 @@
         },
         "type": "legacy",
         "custom_model_data": 311044
+      },
+      {
+        "bedrock_identifier": "stellarity:shulker_spear",
+        "bedrock_options": {
+          "icon": "stellarity_item_shulker_spear_in_hand",
+          "display_handheld": true
+        },
+        "display_name": "Shulker Spear",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:shulker_spear"
       }
     ],
     "minecraft:stone_spear": [
@@ -20913,6 +21263,885 @@
         },
         "type": "legacy",
         "custom_model_data": 311044
+      }
+    ],
+    "minecraft:chiseled_quartz_block": [
+      {
+        "bedrock_identifier": "stellarity:altar_of_the_sacred",
+        "bedrock_options": {
+          "icon": "stellarity_block_altar_of_the_sacred_bottom"
+        },
+        "display_name": "Altar de los Sagrados",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:altar_of_the_sacred"
+      }
+    ],
+    "minecraft:chorus_fruit": [
+      {
+        "bedrock_identifier": "stellarity:candied_chorus_fruit",
+        "bedrock_options": {
+          "icon": "stellarity_item_food_candied_chorus_fruit"
+        },
+        "display_name": "Fruta de Chorus Confitada",
+        "type": "definition",
+        "model": "stellarity:candied_chorus_fruit"
+      },
+      {
+        "bedrock_identifier": "stellarity:fried_chorus_fruit",
+        "bedrock_options": {
+          "icon": "stellarity_item_food_fried_chorus_fruit"
+        },
+        "display_name": "Fruta de Chorus Frita",
+        "type": "definition",
+        "model": "stellarity:fried_chorus_fruit"
+      },
+      {
+        "bedrock_identifier": "stellarity:golden_chorus_fruit",
+        "bedrock_options": {
+          "icon": "stellarity_item_food_golden_chorus_fruit"
+        },
+        "display_name": "Golden Chorus Fruit",
+        "type": "definition",
+        "model": "stellarity:golden_chorus_fruit"
+      },
+      {
+        "bedrock_identifier": "stellarity:shulker_body",
+        "bedrock_options": {
+          "icon": "stellarity_item_food_shulker_body"
+        },
+        "display_name": "Cuerpo de Shulker",
+        "type": "definition",
+        "model": "stellarity:shulker_body"
+      }
+    ],
+    "minecraft:cooked_beef": [
+      {
+        "bedrock_identifier": "stellarity:frozen_carpaccio",
+        "bedrock_options": {
+          "icon": "stellarity_item_food_frozen_carpaccio"
+        },
+        "display_name": "Carpaccio Congelado",
+        "type": "definition",
+        "model": "stellarity:frozen_carpaccio"
+      },
+      {
+        "bedrock_identifier": "stellarity:grilled_enderman_flesh",
+        "bedrock_options": {
+          "icon": "stellarity_item_food_grilled_enderman_flesh"
+        },
+        "display_name": "Carne de Enderman a la Parrilla",
+        "type": "definition",
+        "model": "stellarity:grilled_enderman_flesh"
+      }
+    ],
+    "minecraft:cooked_cod": [
+      {
+        "bedrock_identifier": "stellarity:amethyst_budfish",
+        "bedrock_options": {
+          "icon": "stellarity_item_food_fish_amethyst_budfish"
+        },
+        "display_name": "Pez Brote de Amatista",
+        "type": "definition",
+        "model": "stellarity:amethyst_budfish"
+      },
+      {
+        "bedrock_identifier": "stellarity:crimson_tigerfish",
+        "bedrock_options": {
+          "icon": "stellarity_item_food_fish_crimson_tigerfish"
+        },
+        "display_name": "Pez Tigre Carmesí",
+        "type": "definition",
+        "model": "stellarity:crimson_tigerfish"
+      },
+      {
+        "bedrock_identifier": "stellarity:crystal_heartfish",
+        "bedrock_options": {
+          "icon": "stellarity_item_food_fish_crystal_heartfish"
+        },
+        "display_name": "Crystal Heartfish",
+        "type": "definition",
+        "model": "stellarity:crystal_heartfish"
+      },
+      {
+        "bedrock_identifier": "stellarity:flarefin_koi",
+        "bedrock_options": {
+          "icon": "stellarity_item_food_fish_flarefin_koi"
+        },
+        "display_name": "Koi Aleta de Bengala",
+        "type": "definition",
+        "model": "stellarity:flarefin_koi"
+      },
+      {
+        "bedrock_identifier": "stellarity:fleshy_piranha",
+        "bedrock_options": {
+          "icon": "stellarity_item_food_fish_fleshy_piranha"
+        },
+        "display_name": "Piraña Carnosa",
+        "type": "definition",
+        "model": "stellarity:fleshy_piranha"
+      },
+      {
+        "bedrock_identifier": "stellarity:frost_minnow",
+        "bedrock_options": {
+          "icon": "stellarity_item_food_fish_frost_minnow"
+        },
+        "display_name": "Pececillo Helado",
+        "type": "definition",
+        "model": "stellarity:frost_minnow"
+      },
+      {
+        "bedrock_identifier": "stellarity:overgrown_cod",
+        "bedrock_options": {
+          "icon": "stellarity_item_food_fish_overgrown_cod"
+        },
+        "display_name": "Bacalao Cubierto de Maleza",
+        "type": "definition",
+        "model": "stellarity:overgrown_cod"
+      },
+      {
+        "bedrock_identifier": "stellarity:prismite",
+        "bedrock_options": {
+          "icon": "stellarity_item_food_fish_prismite"
+        },
+        "display_name": "Prismita",
+        "type": "definition",
+        "model": "stellarity:prismite"
+      }
+    ],
+    "minecraft:egg": [
+      {
+        "bedrock_identifier": "stellarity:ender_egg",
+        "bedrock_options": {
+          "icon": "stellarity_item_ender_egg"
+        },
+        "display_name": "Ender Egg",
+        "type": "definition",
+        "model": "stellarity:ender_egg"
+      }
+    ],
+    "minecraft:end_portal_frame": [
+      {
+        "bedrock_identifier": "stellarity:altar_of_the_accursed",
+        "bedrock_options": {
+          "icon": "stellarity_block_altar_of_the_accursed_side"
+        },
+        "display_name": "Altar of The Accursed",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:altar_of_the_accursed"
+      }
+    ],
+    "minecraft:ender_dragon_spawn_egg": [
+      {
+        "bedrock_identifier": "stellarity:voided_skeleton_spawn_egg",
+        "bedrock_options": {
+          "icon": "stellarity_item_spawn_egg_voided_skeleton_spawn_egg"
+        },
+        "display_name": "Voided Skeleton Spawn Egg",
+        "type": "definition",
+        "model": "stellarity:voided_skeleton_spawn_egg"
+      },
+      {
+        "bedrock_identifier": "stellarity:voided_slime_spawn_egg",
+        "bedrock_options": {
+          "icon": "stellarity_item_spawn_egg_voided_slime_spawn_egg"
+        },
+        "display_name": "Voided Slime Spawn Egg",
+        "type": "definition",
+        "model": "stellarity:voided_slime_spawn_egg"
+      },
+      {
+        "bedrock_identifier": "stellarity:voided_zombie_spawn_egg",
+        "bedrock_options": {
+          "icon": "stellarity_item_spawn_egg_voided_zombie_spawn_egg"
+        },
+        "display_name": "Voided Zombie Spawn Egg",
+        "type": "definition",
+        "model": "stellarity:voided_zombie_spawn_egg"
+      }
+    ],
+    "minecraft:ender_pearl": [
+      {
+        "bedrock_identifier": "stellarity:prismatic_pearl",
+        "bedrock_options": {
+          "icon": "stellarity_item_prismatic_pearl"
+        },
+        "display_name": "Perla Prismática",
+        "type": "definition",
+        "model": "stellarity:prismatic_pearl"
+      }
+    ],
+    "minecraft:endermite_spawn_egg": [
+      {
+        "bedrock_identifier": "stellarity:chorus_plating",
+        "bedrock_options": {
+          "icon": "stellarity_item_chorus_plating"
+        },
+        "display_name": "Chapado de Chorus",
+        "type": "definition",
+        "model": "stellarity:chorus_plating"
+      },
+      {
+        "bedrock_identifier": "stellarity:enderite_shard",
+        "bedrock_options": {
+          "icon": "stellarity_item_enderite_shard"
+        },
+        "display_name": "Fragmento de Enderita",
+        "type": "definition",
+        "model": "stellarity:enderite_shard"
+      },
+      {
+        "bedrock_identifier": "stellarity:enderite_smithing_template",
+        "bedrock_options": {
+          "icon": "stellarity_item_enderite_upgrade_smithing_template"
+        },
+        "display_name": "Plantilla de Herrería",
+        "type": "definition",
+        "model": "stellarity:enderite_smithing_template"
+      },
+      {
+        "bedrock_identifier": "stellarity:enderman_hand",
+        "bedrock_options": {
+          "icon": "stellarity_item_enderman_hand"
+        },
+        "display_name": "Enderman's Hand",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:enderman_hand"
+      },
+      {
+        "bedrock_identifier": "stellarity:hallowed_ingot",
+        "bedrock_options": {
+          "icon": "stellarity_item_hallowed_ingot"
+        },
+        "display_name": "Lingote Bendecido",
+        "type": "definition",
+        "model": "stellarity:hallowed_ingot"
+      },
+      {
+        "bedrock_identifier": "stellarity:life_crystal",
+        "bedrock_options": {
+          "icon": "stellarity_item_ender_insignia"
+        },
+        "display_name": "Life Crystal",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:life_crystal"
+      },
+      {
+        "bedrock_identifier": "stellarity:radiant_jewel",
+        "bedrock_options": {
+          "icon": "stellarity_item_radiant_jewel"
+        },
+        "display_name": "Radiant Jewel",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:radiant_jewel"
+      },
+      {
+        "bedrock_identifier": "stellarity:sand_rune",
+        "bedrock_options": {
+          "icon": "stellarity_item_sand_rune"
+        },
+        "display_name": "Sand Rune",
+        "type": "definition",
+        "model": "stellarity:sand_rune"
+      },
+      {
+        "bedrock_identifier": "stellarity:soaring_insignia",
+        "bedrock_options": {
+          "icon": "stellarity_item_soaring_insignia"
+        },
+        "display_name": "Insignia Elevada",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:soaring_insignia"
+      },
+      {
+        "bedrock_identifier": "stellarity:starlight_soot",
+        "bedrock_options": {
+          "icon": "stellarity_item_pixie_dust"
+        },
+        "display_name": "Starlight Soot",
+        "type": "definition",
+        "model": "stellarity:starlight_soot"
+      },
+      {
+        "bedrock_identifier": "stellarity:void_pendant",
+        "bedrock_options": {
+          "icon": "stellarity_item_void_pendant"
+        },
+        "display_name": "Void Pendant",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:void_pendant"
+      }
+    ],
+    "minecraft:fishing_rod": [
+      {
+        "bedrock_identifier": "stellarity:fisher_of_voids",
+        "bedrock_options": {
+          "icon": "stellarity_item_fisher_of_voids",
+          "display_handheld": true
+        },
+        "display_name": "Pescador de Vacíos",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:fisher_of_voids"
+      }
+    ],
+    "minecraft:glass": [
+      {
+        "bedrock_identifier": "stellarity:pixie_in_a_jar",
+        "bedrock_options": {
+          "icon": "stellarity_block_pixie_in_a_jar"
+        },
+        "display_name": "Pixie in a Jar",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:pixie_in_a_jar"
+      }
+    ],
+    "minecraft:hoglin_spawn_egg": [
+      {
+        "bedrock_identifier": "stellarity:flesh_piglin_spawn_egg",
+        "bedrock_options": {
+          "icon": "stellarity_item_spawn_egg_flesh_piglin_spawn_egg"
+        },
+        "display_name": "Flesh Piglin Spawn Egg",
+        "type": "definition",
+        "model": "stellarity:flesh_piglin_spawn_egg"
+      }
+    ],
+    "minecraft:iron_boots": [
+      {
+        "bedrock_identifier": "stellarity:champion_boots",
+        "bedrock_options": {
+          "icon": "stellarity_item_champion_boots"
+        },
+        "display_name": "Champion Boots",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:champion_boots"
+      },
+      {
+        "bedrock_identifier": "stellarity:floral_boots",
+        "bedrock_options": {
+          "icon": "stellarity_item_floral_boots"
+        },
+        "display_name": "Botas Florales",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:floral_boots"
+      },
+      {
+        "bedrock_identifier": "stellarity:hallowed_boots",
+        "bedrock_options": {
+          "icon": "stellarity_item_hallowed_boots"
+        },
+        "display_name": "Botas Benditas",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:hallowed_boots"
+      },
+      {
+        "bedrock_identifier": "stellarity:shulker_boots",
+        "bedrock_options": {
+          "icon": "stellarity_item_shulker_boots"
+        },
+        "display_name": "Botas de Shulker",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:shulker_boots"
+      }
+    ],
+    "minecraft:iron_chestplate": [
+      {
+        "bedrock_identifier": "stellarity:champion_chestplate",
+        "bedrock_options": {
+          "icon": "stellarity_item_champion_chestplate"
+        },
+        "display_name": "Chorus Champion Chestplate",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:champion_chestplate"
+      },
+      {
+        "bedrock_identifier": "stellarity:floral_chestplate",
+        "bedrock_options": {
+          "icon": "stellarity_item_floral_chestplate"
+        },
+        "display_name": "Pechera Floral",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:floral_chestplate"
+      },
+      {
+        "bedrock_identifier": "stellarity:hallowed_chestplate",
+        "bedrock_options": {
+          "icon": "stellarity_item_hallowed_chestplate"
+        },
+        "display_name": "Pechera Bendita",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:hallowed_chestplate"
+      },
+      {
+        "bedrock_identifier": "stellarity:shulker_chestplate",
+        "bedrock_options": {
+          "icon": "stellarity_item_shulker_chestplate"
+        },
+        "display_name": "Pechera de Shulker",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:shulker_chestplate"
+      }
+    ],
+    "minecraft:iron_helmet": [
+      {
+        "bedrock_identifier": "stellarity:champion_helmet",
+        "bedrock_options": {
+          "icon": "stellarity_item_champion_helmet"
+        },
+        "display_name": "Champion Helmet",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:champion_helmet"
+      },
+      {
+        "bedrock_identifier": "stellarity:floral_helmet",
+        "bedrock_options": {
+          "icon": "stellarity_item_floral_helmet"
+        },
+        "display_name": "Casco Floral",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:floral_helmet"
+      },
+      {
+        "bedrock_identifier": "stellarity:hallowed_helmet",
+        "bedrock_options": {
+          "icon": "stellarity_item_hallowed_helmet"
+        },
+        "display_name": "Casco Bendito",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:hallowed_helmet"
+      },
+      {
+        "bedrock_identifier": "stellarity:shulker_helmet",
+        "bedrock_options": {
+          "icon": "stellarity_item_shulker_helmet"
+        },
+        "display_name": "Yelmo de Shulker",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:shulker_helmet"
+      }
+    ],
+    "minecraft:iron_leggings": [
+      {
+        "bedrock_identifier": "stellarity:champion_leggings",
+        "bedrock_options": {
+          "icon": "stellarity_item_champion_leggings"
+        },
+        "display_name": "Champion Leggings",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:champion_leggings"
+      },
+      {
+        "bedrock_identifier": "stellarity:floral_leggings",
+        "bedrock_options": {
+          "icon": "stellarity_item_floral_leggings"
+        },
+        "display_name": "Floral Leggings",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:floral_leggings"
+      },
+      {
+        "bedrock_identifier": "stellarity:hallowed_leggings",
+        "bedrock_options": {
+          "icon": "stellarity_item_hallowed_leggings"
+        },
+        "display_name": "Grebas Benditas",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:hallowed_leggings"
+      },
+      {
+        "bedrock_identifier": "stellarity:shulker_leggings",
+        "bedrock_options": {
+          "icon": "stellarity_item_shulker_leggings"
+        },
+        "display_name": "Grebas de Shulker",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:shulker_leggings"
+      }
+    ],
+    "minecraft:item_frame": [
+      {
+        "bedrock_identifier": "stellarity:phantom_item_frame",
+        "bedrock_options": {
+          "icon": "stellarity_item_phantom_item_frame"
+        },
+        "display_name": "Marco Fantasma",
+        "type": "definition",
+        "model": "stellarity:phantom_item_frame"
+      }
+    ],
+    "minecraft:leather_horse_armor": [
+      {
+        "bedrock_identifier": "stellarity:reinforced_horse_armor",
+        "bedrock_options": {
+          "icon": "stellarity_item_reinforced_horse_armor"
+        },
+        "display_name": "Reinforced Horse Armor",
+        "type": "definition",
+        "model": "stellarity:reinforced_horse_armor"
+      }
+    ],
+    "minecraft:mushroom_stew": [
+      {
+        "bedrock_identifier": "stellarity:chorus_stew",
+        "bedrock_options": {
+          "icon": "stellarity_item_food_chorus_stew"
+        },
+        "display_name": "Sopa de Chorus",
+        "type": "definition",
+        "model": "stellarity:chorus_stew"
+      },
+      {
+        "bedrock_identifier": "stellarity:pho",
+        "bedrock_options": {
+          "icon": "stellarity_item_food_pho"
+        },
+        "display_name": "Pho",
+        "type": "definition",
+        "model": "stellarity:pho"
+      }
+    ],
+    "minecraft:music_disc_otherside": [
+      {
+        "bedrock_identifier": "stellarity:music_disc_deviants_light_music_box",
+        "bedrock_options": {
+          "icon": "stellarity_item_music_disc_deviants_light_music_box"
+        },
+        "display_name": "Music Disc Deviants Light Music Box",
+        "type": "definition",
+        "model": "stellarity:music_disc_deviants_light_music_box"
+      },
+      {
+        "bedrock_identifier": "stellarity:music_disc_fires_of_hokkai",
+        "bedrock_options": {
+          "icon": "stellarity_item_music_disc_fires_of_hokkai"
+        },
+        "display_name": "Music Disc Fires Of Hokkai",
+        "type": "definition",
+        "model": "stellarity:music_disc_fires_of_hokkai"
+      }
+    ],
+    "minecraft:music_disc_precipice": [
+      {
+        "bedrock_identifier": "stellarity:music_disc_precipice_stereo",
+        "bedrock_options": {
+          "icon": "stellarity_item_music_disc_precipice_stereo"
+        },
+        "display_name": "Music Disc Precipice Stereo",
+        "type": "definition",
+        "model": "stellarity:music_disc_precipice_stereo"
+      }
+    ],
+    "minecraft:ominous_trial_key": [
+      {
+        "bedrock_identifier": "stellarity:gilded_purpur_key",
+        "bedrock_options": {
+          "icon": "stellarity_item_gilded_purpur_key"
+        },
+        "display_name": "Gilded Purpur Key",
+        "type": "definition",
+        "model": "stellarity:gilded_purpur_key"
+      },
+      {
+        "bedrock_identifier": "stellarity:winged_key",
+        "bedrock_options": {
+          "icon": "stellarity_item_winged_key"
+        },
+        "display_name": "Winged Key",
+        "type": "definition",
+        "model": "stellarity:winged_key"
+      }
+    ],
+    "minecraft:popped_chorus_fruit": [
+      {
+        "bedrock_identifier": "stellarity:decayed_clover",
+        "bedrock_options": {
+          "icon": "stellarity_item_decayed_clover"
+        },
+        "display_name": "Decayed Clover",
+        "type": "definition",
+        "model": "stellarity:decayed_clover"
+      }
+    ],
+    "minecraft:pufferfish": [
+      {
+        "bedrock_identifier": "stellarity:bubblefish",
+        "bedrock_options": {
+          "icon": "stellarity_item_food_fish_bubblefish"
+        },
+        "display_name": "Pez Burbúja",
+        "type": "definition",
+        "model": "stellarity:bubblefish"
+      }
+    ],
+    "minecraft:pumpkin_pie": [
+      {
+        "bedrock_identifier": "stellarity:chorus_pie",
+        "bedrock_options": {
+          "icon": "stellarity_item_food_chorus_pie"
+        },
+        "display_name": "Pastel de Chorus",
+        "type": "definition",
+        "model": "stellarity:chorus_pie"
+      },
+      {
+        "bedrock_identifier": "stellarity:shepherd_pie",
+        "bedrock_options": {
+          "icon": "stellarity_item_food_shepherd_pie"
+        },
+        "display_name": "Pastel de Cordero y Papa",
+        "type": "definition",
+        "model": "stellarity:shepherd_pie"
+      }
+    ],
+    "minecraft:rotten_flesh": [
+      {
+        "bedrock_identifier": "stellarity:enderman_flesh",
+        "bedrock_options": {
+          "icon": "stellarity_item_food_enderman_flesh"
+        },
+        "display_name": "Carne de Enderman",
+        "type": "definition",
+        "model": "stellarity:enderman_flesh"
+      }
+    ],
+    "minecraft:slime_ball": [
+      {
+        "bedrock_identifier": "stellarity:goosh",
+        "bedrock_options": {
+          "icon": "stellarity_item_food_fish_goosh"
+        },
+        "display_name": "Goosh",
+        "type": "definition",
+        "model": "stellarity:goosh"
+      }
+    ],
+    "minecraft:sweet_berries": [
+      {
+        "bedrock_identifier": "stellarity:duskberry",
+        "bedrock_options": {
+          "icon": "stellarity_item_duskberry"
+        },
+        "display_name": "Baya del Atardecer",
+        "components": {
+          "minecraft:max_stack_size": 1
+        },
+        "type": "definition",
+        "model": "stellarity:duskberry"
+      }
+    ],
+    "minecraft:trial_key": [
+      {
+        "bedrock_identifier": "stellarity:purpur_key",
+        "bedrock_options": {
+          "icon": "stellarity_item_purpur_key"
+        },
+        "display_name": "Purpur Key",
+        "type": "definition",
+        "model": "stellarity:purpur_key"
+      }
+    ],
+    "minecraft:tropical_fish": [
+      {
+        "bedrock_identifier": "stellarity:ender_koi",
+        "bedrock_options": {
+          "icon": "stellarity_item_food_fish_ender_koi"
+        },
+        "display_name": "Koi de Ender",
+        "type": "definition",
+        "model": "stellarity:ender_koi"
+      },
+      {
+        "bedrock_identifier": "stellarity:potassifish",
+        "bedrock_options": {
+          "icon": "stellarity_item_food_fish_potassifish"
+        },
+        "display_name": "Potassifish",
+        "type": "definition",
+        "model": "stellarity:potassifish"
+      },
+      {
+        "bedrock_identifier": "stellarity:prismatic_sushi",
+        "bedrock_options": {
+          "icon": "stellarity_item_food_prismatic_sushi"
+        },
+        "display_name": "Sushi Prismático",
+        "type": "definition",
+        "model": "stellarity:prismatic_sushi"
+      },
+      {
+        "bedrock_identifier": "stellarity:sushi",
+        "bedrock_options": {
+          "icon": "stellarity_item_food_sushi"
+        },
+        "display_name": "Sushi",
+        "type": "definition",
+        "model": "stellarity:sushi"
+      }
+    ],
+    "minecraft:warped_fungus_on_a_stick": [
+      {
+        "bedrock_identifier": "stellarity:book_of_conveyance",
+        "bedrock_options": {
+          "icon": "stellarity_item_book_of_conveyance",
+          "display_handheld": true
+        },
+        "display_name": "Book of Conveyance",
+        "type": "definition",
+        "model": "stellarity:book_of_conveyance"
+      },
+      {
+        "bedrock_identifier": "stellarity:book_of_jinx",
+        "bedrock_options": {
+          "icon": "stellarity_item_book_of_jinx",
+          "display_handheld": true
+        },
+        "display_name": "Libro de Jinx",
+        "type": "definition",
+        "model": "stellarity:book_of_jinx"
+      },
+      {
+        "bedrock_identifier": "stellarity:book_of_light",
+        "bedrock_options": {
+          "icon": "stellarity_item_book_of_light",
+          "display_handheld": true
+        },
+        "display_name": "Libro de la Luz",
+        "type": "definition",
+        "model": "stellarity:book_of_light"
+      },
+      {
+        "bedrock_identifier": "stellarity:book_of_obstruct",
+        "bedrock_options": {
+          "icon": "stellarity_item_book_of_obstruct",
+          "display_handheld": true
+        },
+        "display_name": "Book of Obstruct",
+        "type": "definition",
+        "model": "stellarity:book_of_obstruct"
+      },
+      {
+        "bedrock_identifier": "stellarity:book_of_return",
+        "bedrock_options": {
+          "icon": "stellarity_item_book_of_return",
+          "display_handheld": true
+        },
+        "display_name": "Book of Return",
+        "type": "definition",
+        "model": "stellarity:book_of_return"
+      },
+      {
+        "bedrock_identifier": "stellarity:book_of_updraft",
+        "bedrock_options": {
+          "icon": "stellarity_item_book_of_updraft",
+          "display_handheld": true
+        },
+        "display_name": "Libro de Corriente Ascendente",
+        "type": "definition",
+        "model": "stellarity:book_of_updraft"
+      },
+      {
+        "bedrock_identifier": "stellarity:satchel_of_voids",
+        "bedrock_options": {
+          "icon": "stellarity_item_satchel_of_voids",
+          "display_handheld": true
+        },
+        "display_name": "Satchel of Voids",
+        "type": "definition",
+        "model": "stellarity:satchel_of_voids"
+      }
+    ],
+    "minecraft:written_book": [
+      {
+        "bedrock_identifier": "stellarity:endonomicon",
+        "bedrock_options": {
+          "icon": "stellarity_item_endonomicon"
+        },
+        "display_name": "Endonomicon",
+        "type": "definition",
+        "model": "stellarity:endonomicon"
+      },
+      {
+        "bedrock_identifier": "stellarity:flavors_of_the_void",
+        "bedrock_options": {
+          "icon": "stellarity_item_flavors_of_the_void"
+        },
+        "display_name": "Flavors of The Void",
+        "type": "definition",
+        "model": "stellarity:flavors_of_the_void"
       }
     ]
   }
